@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 create table u_member
 (id varchar2(20),
 pw varchar2(20),
@@ -8,6 +7,7 @@ address1 varchar2(20),
 address2 varchar2(20),
 constraint u_member12_pk primary key(id));
 
+select * from u_member
 drop table u_member;
 
 create table Calender

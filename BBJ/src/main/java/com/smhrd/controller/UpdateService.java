@@ -18,18 +18,21 @@ public class UpdateService implements Command {
 
 	
 	// 2. 데이터 받아오기
+	String id = request.getParameter("id");
 	String pw = request.getParameter("pw");
-	String tel = request.getParameter("tel");
-	String address = request.getParameter("address");
-	String email = request.getParameter("email");
+	String name = request.getParameter("name");
+	String address1 = request.getParameter("address1");
+	String address2 = request.getParameter("address2");
 
-	System.out.println("email:" + email);
+
+	//System.out.println("id:" + id);
 	System.out.println("pw:" + pw);
-	System.out.println("tel:" + tel);
-	System.out.println("address:" + address);
+	System.out.println("name:" + name);
+	System.out.println("address1:" + address1);
+	System.out.println("address2:" + address2);
 
 	// 3.DTO로 묶기
-	MemberDTO dto = new MemberDTO(email, pw, tel, address);
+	MemberDTO dto = new MemberDTO(id, pw, name, address1,address2);
 
 	// db접속 확인하러 가기
 

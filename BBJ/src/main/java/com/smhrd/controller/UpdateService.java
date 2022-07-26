@@ -32,7 +32,7 @@ public class UpdateService implements Command {
 	System.out.println("address2:" + address2);
 
 	// 3.DTO로 묶기
-	MemberDTO dto = new MemberDTO(id, pw, name, address1,address2);
+	MemberDTO dto = new MemberDTO(id, pw, name, null,address1,address2);
 
 	// db접속 확인하러 가기
 

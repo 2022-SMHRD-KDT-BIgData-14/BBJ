@@ -70,7 +70,7 @@ body {
 .sub_title {
   font-size: 20px;
   font-weight: bold;
-  color: #7f47dd;
+  color: lemonchiffon;
 }
 
 .intro {
@@ -111,7 +111,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   background-color: #ffffff;
-  color: #7f47dd;
+  color: darkslategrey;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -162,3 +162,7 @@ body {
   width: 100%;
   height: auto;
 }
+
+
+
+

@@ -187,7 +187,7 @@
     /* padding : 0 10px 20px == padding : 0 10px 20px 0 */
   }
   .lectures li button{
-    background-color: #7F47DD;
+    background-color: darkslategrey;
     color: #FFFFFF;
   }
   .share{
@@ -215,7 +215,7 @@
     margin-bottom: 30px;
   }
   .jejucodingbasecamp_color{
-    background-color: #7F47DD;
+    background-color: darkslategrey;
     color: #ffffff;
   }
   .BBJImg {

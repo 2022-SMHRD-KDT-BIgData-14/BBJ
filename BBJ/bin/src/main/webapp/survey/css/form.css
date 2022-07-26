@@ -83,13 +83,13 @@ button,
   border-radius: 10px;
   font-family: "NEXON Lv1 Gothic OTF";
   font-size: 20px;
-  background-color: #7f47dd;
+  background-color: white;
   color: #ffffff;
   cursor: pointer;
 }
 
 button:hover,
 .submit_btn:hover {
-  color: #7f47dd;
+  color:white;
   background-color: #ffffff;
 }

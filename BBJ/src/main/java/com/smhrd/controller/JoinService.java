@@ -35,7 +35,7 @@ public class JoinService implements Command {
 		}
 
 		// 3.DTO로 묶기
-		MemberDTO dto = new MemberDTO(id, pw, name,address1,address2);
+		MemberDTO dto = new MemberDTO(id, pw, name,null,address1,address2);
 
 		// 4.join 메소드 호출
 		int row = new MemberDAO().join(dto);
@@ -52,11 +52,11 @@ public class JoinService implements Command {
 			// JoinSuccess.jsp
 			// 회원가입한 이메일 전송
 			request.setAttribute("id", id);// 담아주기 email을 담아줘야 한당~!~!~!~!~!~~
-			moveURL = "";
+			moveURL = "/survey/form.html";
 		} else {
 			System.out.println("회원가입 실패");
 			// Main.jsp
-			moveURL = "./Main.jsp";
+			moveURL = "./member.html";
 		}
 		return moveURL ;
 	}

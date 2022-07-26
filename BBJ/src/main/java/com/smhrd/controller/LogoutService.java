@@ -18,7 +18,7 @@ public class LogoutService implements Command {
 		session.removeAttribute("info"); // info세션 삭제
 		// 세션 전체 종료시키기-> session.invalidate();
 		
-		return "./Main.jsp";
+		return "/insert/member.html";
 		
 		
 		}

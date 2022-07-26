@@ -52,6 +52,10 @@ public class FrontController extends HttpServlet {
 			service = new DeleteMemberService();
 
 		} 
+		
+		String path = request.getServletContext().getRealPath("");
+		System.out.println(path);
+		
 		moveURL = service.excute(request, response);
 		RequestDispatcher rd = request.getRequestDispatcher(moveURL);
 		rd.forward(request, response);

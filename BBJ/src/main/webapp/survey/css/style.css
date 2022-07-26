@@ -70,7 +70,7 @@ body {
 .sub_title {
   font-size: 20px;
   font-weight: bold;
-  color: #EA7E7C;
+  color: gold;
 }
 
 .intro {
@@ -163,15 +163,7 @@ body {
   height: auto;
 }
 
-#top-fix-category{
-	text-align:right;
-	position:absolute;
-	right:0px; 
-	top:0px; 
-	width:300px; 
-	height:100px;
-	z-index:1000;
-} 
+
 .logout_Btn {
 	background-color: lightslategray;
   	color: white;

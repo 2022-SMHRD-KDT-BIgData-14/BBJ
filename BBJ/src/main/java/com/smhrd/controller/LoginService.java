@@ -35,7 +35,7 @@ public class LoginService implements Command {
 			//로그인한 정보 유지 -Session 사용
 			HttpSession session = request.getSession();
 			session.setAttribute("info",info);
-			//session의 영역읜 browser까지
+			//session의 영역의 browser까지
 			moveURL="../main/main_index.html";
 		}else {
 			System.out.println("로그인 실패");

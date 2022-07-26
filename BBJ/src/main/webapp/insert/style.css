@@ -1,4 +1,4 @@
-/* Please ❤ this if you like it! */
+/* Please �씍 this if you like it! */
 
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
@@ -278,11 +278,12 @@ h6 span{
 
 .logo {
 	position: absolute;
-	top: 0px;
-	right: 30px;
+	top: 50px;
+	left: 50%;
 	display: block;
 	z-index: 100;
 	transition: all 250ms linear;
+	transform:translate(-50%, -50%);
 }
 .logo img {
 	height: 200px;

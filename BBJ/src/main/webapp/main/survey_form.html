@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Elen - Free Bootstrap 4 Template by Colorlib</title>
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,14 +31,15 @@
 <link rel="stylesheet" href="css/icomoon.css">
 <link rel="stylesheet" href="css/style.css">
 
-<!-- survey_index.html에서 css연결 link 가져오기 -->
+<!-- form.html css연결 link -->
+<title>나의 운동 유형찾기</title>
 <link rel="stylesheet" type="text/css" href="../survey/css/reset.css" />
-<link rel="stylesheet" type="text/css" href="../survey/css/style.css" />
+<link rel="stylesheet" type="text/css" href="../survey/css/form.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 <body>
 
 	<div id="colorlib-page">
-
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary"
 			class="js-fullheight text-center">
@@ -78,48 +78,135 @@
 			</div>
 		</aside>
 		<!-- END COLORLIB-ASIDE -->
+
+		<!-- 설문조사 form 시작 -->
 		<div id="colorlib-main">
 
-			<div class="test" style="float: right;">
-				<!-- 로그아웃/회원정보수정 버튼 생성 -->
-				<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
-				<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
-			</div>
+			<!--<section class="ftco-section">
+				<div class="container">
+				</div>
+			    </section> -->
+			<section id="survey">
+				<div class="wrapper">
+					<form id="form" action="result.html">
+						<div class="test">
+							<div class="question_container">
+								<h3 class="number">1/3</h3>
+								<h3 class="question">당신이 가장 재밌었던 수업은?</h3>
+							</div>
+							<div class="answer">
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+							</div>
+							<div class="btn_wrap">
+								<button class="next_btn">다 음</button>
+							</div>
+						</div>
+						<div class="test">
+							<div class="question_container">
+								<h3 class="number">2/3</h3>
+								<h3 class="question">당신이 가장 재밌었던 수업은?</h3>
+							</div>
+							<div class="answer">
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+							</div>
+							<div class="btn_wrap btn_sort">
+								<button class="prev_btn">이 전</button>
+								<button class="next_btn">다 음</button>
+							</div>
+						</div>
+						<div class="test">
+							<div class="question_container">
+								<h3 class="number">3/3</h3>
+								<h3 class="question">당신이 가장 재밌었던 수업은?</h3>
+							</div>
+							<div class="answer">
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+								<div>
+									<!-- input, label의 id, for 맞춰주기 -->
+									<input id="one" type="radio" name="answer_1" /> <label
+										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
+								</div>
+							</div>
+							<div class="btn_wrap btn_sort">
+								<button class="prev_btn">이 전</button>
+								<input type="submit" value="제 출" class="submit_btn" />
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<script type="text/javascript" src="js/form.js"></script>
 
-			<!-- survey 창 삽입 -->
-			<div class="wrapper">
-				<div class="title">
-					<h3 class="main_title">맞춤형 운동 추천</h3>
-					<h3 class="sub_title">헬스/요가/필라테스/크로스핏/홈트레이닝</h3>
-				</div>
-				<div class="intro">
-					<h1>나의 운동 유형은?</h1>
-					<div class="type">
-						<ul class="type_list">
-							<li>헬스</li>
-							<li>요가</li>
-							<li>필라테스</li>
-							<li>크로스핏</li>
-							<li>홈트레이닝</li>
-						</ul>
-					</div>
-				</div>
-				
-				<!-- 설문조사 form으로 이동하는 버튼(설문시작) -->
-				<div class="button">
-					<a href="../survey/form.html">
-						<button class="start" type="button">시작하기</button>
-					</a>
-				</div>
 
-				<div class="BBJImg">
-					<a href="http://www.paullab.co.kr"> <img
-						src="imgs/BBJ_logo.png" alt="BBJ" />
-					</a>
-				</div>
-			</div>
 
-			<!-- 아래 상단바? -->
+			<!-- 아래 상단바 메뉴 -->
 			<footer class="ftco-footer ftco-bg-dark ftco-section">
 				<div class="container px-md-5">
 					<div class="row mb-5">

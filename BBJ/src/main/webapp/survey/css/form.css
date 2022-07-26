@@ -15,8 +15,8 @@
 }
 
 body {
-  background-color: lightslategray;
-  color:white;
+  background-color: white;
+  color: lightslategray;
   font-family: "NEXON Lv1 Gothic OTF";
   overflow: hidden;
 }
@@ -83,7 +83,7 @@ button,
   border-radius: 10px;
   font-family: "NEXON Lv1 Gothic OTF";
   font-size: 20px;
-  background-color: white;
+  background-color: lightslategray;
   color: #ffffff;
   cursor: pointer;
 }
@@ -91,5 +91,5 @@ button,
 button:hover,
 .submit_btn:hover {
   color: white;
-  background-color: #ffffff;
+  background-color: lightslategray;
 }

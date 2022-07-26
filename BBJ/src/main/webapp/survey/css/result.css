@@ -15,8 +15,8 @@
   }
 
   body{
-    background-color:lightslategray;
-    color: white;
+    background-color: white;
+    color: lightslategray;
     font-family: "NEXON Lv1 Gothic OTF";
   }
   button {
@@ -29,8 +29,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: lightslategray;
+    color: white;
   }
   button:hover{
     text-decoration: underline;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Elen - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -28,29 +27,22 @@
     <link rel="stylesheet" href="css/style.css">
     
     <!-- calendar_index.html 연결 -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FullCalendar Example</title>
     <link rel=" shortcut icon" href="image/favicon.ico">
 
-    <link rel="stylesheet" href="vendor/css/fullcalendar.min.css" />
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href='vendor/css/select2.min.css' />
-    <link rel="stylesheet" href='vendor/css/bootstrap-datetimepicker.min.css' />
+    <link rel="stylesheet" href="../vendor/css/fullcalendar.min.css" />
+    <link rel="stylesheet" href="../vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href='../vendor/css/select2.min.css' />
+    <link rel="stylesheet" href='../vendor/css/bootstrap-datetimepicker.min.css' />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
 
 	<div id="colorlib-page">
-	
-		<div id="top-fix-category">
-			<a href="LogoutService"><button class="logout_Btn">로그아웃</button></a>
-			<a href="UpdateService"><button class="update_Btn">개인정보수정</button></a>
-		</div>
 		
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
@@ -79,9 +71,15 @@
 		</aside> <!-- END COLORLIB-ASIDE -->
 		
 		<div id="colorlib-main">
-		<!-- calendar 기능 삽입 -->
-		<div class="container">
+			<div class="test" style="float:right;">
+				<!-- 로그아웃/회원정보수정 버튼 생성 -->
+				<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
+				<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
+			</div>
 
+		<div class="container">
+		<!-- calendar 기능 삽입 -->
+		
         <!-- 일자 클릭시 메뉴오픈 -->
         <div id="contextMenu" class="dropdown clearfix">
             <ul class="dropdown-menu dropNewEvent" role="menu" aria-labelledby="dropdownMenu"

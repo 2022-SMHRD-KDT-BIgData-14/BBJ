@@ -21,7 +21,6 @@ public class MemberDAO {
 		return row;
 	}
 	//로그인
-	// select * from web_member where email=? and pw=?
 	public MemberDTO login(MemberDTO dto) {
 		SqlSession session= sqlSessionFactory.openSession(true);
 		MemberDTO info= session.selectOne("login",dto);

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* @font-face <- 웹 폰트  */
+=======
+
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 @font-face {
   font-family: "GmarketSansBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
@@ -85,9 +89,17 @@ body {
 
 .type {
   font-size: 25px;
+<<<<<<< HEAD
   /* 한 글자가 들어갈 수 있는 위아래 간격 */
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
   line-height: 3em;
+<<<<<<< HEAD
   /* em <- fontsize의 배수 즉, 25px의 3배 75px */
+=======
+ 
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
   height: 3em;
   overflow: hidden;
 }
@@ -119,7 +131,7 @@ body {
 
 .button button:hover {
   opacity: 0.7;
-  /* button opacity time animation */
+  
   transition: all 1s;
 }
 

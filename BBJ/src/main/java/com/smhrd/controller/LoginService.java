@@ -15,14 +15,14 @@ public class LoginService implements Command {
 		System.out.println("[LoginService]");
 		
 		//2. 데이터 받아오기
-		String email= request.getParameter("email");
+		String id= request.getParameter("id");
 		String pw= request.getParameter("pw");
 		
-		System.out.println("email:"+email);
+		System.out.println("id:"+id);
 		System.out.println("pw:"+pw);
 	
 		//3.DTO로 묶기
-		MemberDTO dto = new MemberDTO(email, pw);
+		MemberDTO dto = new MemberDTO(id, pw);
 		
 		//db접속 확인하러 가기
 		
@@ -34,13 +34,13 @@ public class LoginService implements Command {
 			System.out.println("로그인 성공");
 			//로그인한 정보 유지 -Session 사용
 			HttpSession session = request.getSession();
-			session.setAttribute("info",info);//info 유지 시킬 거임 ~!!!~!
+			session.setAttribute("info",info);
 			//session의 영역읜 browser까지
 		}else {
 			System.out.println("로그인 실패");
 		}
 
 		
-		return "./Main.jsp";
+		return "/main.html";
 	}
 }

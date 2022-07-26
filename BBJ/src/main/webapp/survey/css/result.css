@@ -15,8 +15,8 @@
   }
 
   body{
-    background-color: #FAF1BE;
-    color: #000000;
+    background-color:lightslategray;
+    color: white;
     font-family: "NEXON Lv1 Gothic OTF";
   }
   button {
@@ -218,21 +218,21 @@
     background-color: #7F47DD;
     color: #ffffff;
   }
-  .weniv {
+  .BBJImg {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
   }
   
-  .weniv a {
+  .BBJImg a {
     width: 100px;
   }
   
-  .weniv img {
+  .BBJImg img {
     width: 100%;
     height: auto;
   }
-  .weniv p{
+  .BBJImg p{
     padding-top: 20px;
     font-size: 10px;
     text-align: center;

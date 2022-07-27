@@ -30,7 +30,13 @@ public class LoginService implements Command {
 		
 		//5.실행결과 확인하기
 		String moveURL=null;
-		if(info != null) {
+		if(info.getId().equals("admin")) {
+			System.out.println("로그인 성공");
+			HttpSession session = request.getSession();
+			session.setAttribute("info",info);
+			moveURL="../main/admin.html";
+		}
+		else if(info != null) {
 			System.out.println("로그인 성공");
 			//로그인한 정보 유지 -Session 사용
 			HttpSession session = request.getSession();

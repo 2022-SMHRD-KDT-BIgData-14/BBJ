@@ -25,7 +25,7 @@ public class UpdateService implements Command {
 	String address2 = request.getParameter("address2");
 
 
-	//System.out.println("id:" + id);
+	System.out.println("id:" + id);
 	System.out.println("pw:" + pw);
 	System.out.println("name:" + name);
 	System.out.println("address1:" + address1);
@@ -38,17 +38,22 @@ public class UpdateService implements Command {
 
 	// 4. update 메소드 호출
 	int row = new MemberDAO().update(dto);
+	String moveURL=null;
 	// 5. 실핼 결과 확인
 	if (row == 1) {
 		System.out.println("수정 성공");
 		HttpSession session = request.getSession();
 		// session에 잇는 info도 업데이트
 		session.setAttribute("info", dto);
-
+		if(id.equals("admin")) {
+			moveURL="../main/admin.html";
+		}else {
+		moveURL="../main/member.html";}
 	} else {
 		System.out.println("수정 실패");
+		moveURL="../main/main_index.html";
 	}
-	return "./Main.jsp";
+	return moveURL;
 	
 		}
 }

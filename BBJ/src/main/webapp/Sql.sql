@@ -30,13 +30,14 @@ create table Calender
  
 create table PT
 (PTNB number(20),
-EXERCISE varchar2(20),
-PTNAME varchar2(20),
+EXERCISE varchar2(100),
+PTNAME varchar2(100),
 ADDRESS1 varchar2(100),
 ADDRESS2 varchar2(100),
+IMAGE varchar2(100),
 constraint PT_PTNB_pk primary key(PTNB));
 
-
+select * from PT
 
 
 

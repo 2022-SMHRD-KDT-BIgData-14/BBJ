@@ -31,7 +31,7 @@ public class FrontController extends HttpServlet {
 		System.out.println("요청 들어온 주소 :" + requestURI);
 		String contextPath = request.getContextPath();
 		System.out.println("프로젝트 이름 :" + contextPath);
-
+		
 		String result = requestURI.substring(contextPath.length() + 8);
 		System.out.println("요청 서블릿 :" + result);
 		String moveURL = null;
@@ -45,10 +45,10 @@ public class FrontController extends HttpServlet {
 		} else if (result.equals("LogoutService.do")) {
 			service = new LogoutService();
 
-		} else if (result.equals("UpdateService.do")) {
+		} else if (result.equals("dateService.do")) {
 			service = new UpdateService();
 
-		} else if (result.equals("DeleteMemberService.do")) {
+		} else if (result.equals("leteMemberService.do")) {
 			service = new DeleteMemberService();
 
 		} 

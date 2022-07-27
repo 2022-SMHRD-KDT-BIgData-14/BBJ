@@ -13,7 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	
 	<update id="update" parameterType="MemberDTO">
-		update u_member set pw=#{pw},name=#{name},address=#{address1},address=#{address1} where id=#{id}   
+		update u_member set pw=#{pw},name=#{name},address1=#{address1},address2=#{address2} where id=#{id}   
 	
 	</update>
 	

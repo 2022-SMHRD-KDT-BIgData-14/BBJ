@@ -90,17 +90,12 @@ body {
 
 .type {
   font-size: 25px;
-<<<<<<< HEAD
   /* 한 글자가 들어갈 수 있는 위아래 간격 */
-=======
- 
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
+
   line-height: 3em;
-<<<<<<< HEAD
+
   /* em <- fontsize의 배수 즉, 25px의 3배 75px */
-=======
- 
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
+
   height: 3em;
   overflow: hidden;
 }

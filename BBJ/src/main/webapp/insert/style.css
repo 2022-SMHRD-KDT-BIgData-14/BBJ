@@ -278,12 +278,12 @@ h6 span{
 
 .logo {
 	position: absolute;
-	top: 50px;
-	left: 50%;
+	top: 10px;
+	right: 0;
 	display: block;
 	z-index: 100;
 	transition: all 250ms linear;
-	transform:translate(-50%, -50%);
+	/* transform:translate(-50%, -50%); */
 }
 .logo img {
 	height: 200px;

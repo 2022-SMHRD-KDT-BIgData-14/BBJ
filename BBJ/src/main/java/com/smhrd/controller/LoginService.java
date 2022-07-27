@@ -45,7 +45,7 @@ public class LoginService implements Command {
 			moveURL="../main/main_index.html";
 		}else {
 			System.out.println("로그인 실패");
-			moveURL="./member.html";
+			moveURL="../insert/member.html";
 		}
 
 		

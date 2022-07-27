@@ -15,10 +15,10 @@ public class DeleteMemberService implements Command {
 		// delete form web_member where email = test
 
 		// 데이터 받아오기
-		String email = request.getParameter("email");
+		String id = request.getParameter("id");
 
 		// deleteMember
-		int row = new MemberDAO().deleteMember(email);
+		int row = new MemberDAO().deleteMember(id);
 
 		if (row == 1) {
 			System.out.println("삭제 성공");
@@ -27,6 +27,6 @@ public class DeleteMemberService implements Command {
 		}
 		
 		
-		return "./Main.jsp";
+		return "../main/ShowMember.jsp";
 	}
 }

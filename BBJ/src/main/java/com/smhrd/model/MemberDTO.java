@@ -10,9 +10,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor// 따로 만들어주기
 public class MemberDTO {
 	
-	@NonNull private String email;
-	@NonNull private String pw;//nonnull  가방 따로 만들기
-	private String tel;
-	private String address;
+	@NonNull private String id;
+	@NonNull private String pw;
+	private String name;
+	private String exercise;	
+	private String address1;
+	private String address2;
 }
 

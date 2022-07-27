@@ -18,34 +18,42 @@ public class UpdateService implements Command {
 
 	
 	// 2. 데이터 받아오기
+	String id = request.getParameter("id");
 	String pw = request.getParameter("pw");
-	String tel = request.getParameter("tel");
-	String address = request.getParameter("address");
-	String email = request.getParameter("email");
+	String name = request.getParameter("name");
+	String address1 = request.getParameter("address1");
+	String address2 = request.getParameter("address2");
 
-	System.out.println("email:" + email);
+
+	System.out.println("id:" + id);
 	System.out.println("pw:" + pw);
-	System.out.println("tel:" + tel);
-	System.out.println("address:" + address);
+	System.out.println("name:" + name);
+	System.out.println("address1:" + address1);
+	System.out.println("address2:" + address2);
 
 	// 3.DTO로 묶기
-	MemberDTO dto = new MemberDTO(email, pw, tel, address);
+	MemberDTO dto = new MemberDTO(id, pw, name, null,address1,address2);
 
 	// db접속 확인하러 가기
 
 	// 4. update 메소드 호출
 	int row = new MemberDAO().update(dto);
+	String moveURL=null;
 	// 5. 실핼 결과 확인
 	if (row == 1) {
 		System.out.println("수정 성공");
 		HttpSession session = request.getSession();
 		// session에 잇는 info도 업데이트
 		session.setAttribute("info", dto);
-
+		if(id.equals("admin")) {
+			moveURL="../main/admin.html";
+		}else {
+		moveURL="../main/member.html";}
 	} else {
 		System.out.println("수정 실패");
+		moveURL="../main/main_index.html";
 	}
-	return "./Main.jsp";
+	return moveURL;
 	
 		}
 }

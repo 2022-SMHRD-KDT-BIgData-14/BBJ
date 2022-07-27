@@ -8,8 +8,7 @@
 	
 	<typeAliases>
 		<typeAlias type="com.smhrd.model.MemberDTO" alias="MemberDTO"/>
-		<typeAlias type="com.smhrd.model.MessageDTO" alias="MessageDTO"/>
-		<typeAlias type="com.smhrd.model.BoardDTO" alias="BoardDTO"/>
+		
 		
 	</typeAliases>
 	<environments default="development">
@@ -25,8 +24,7 @@
 	</environments>
 	<mappers>
 		<mapper resource="com/smhrd/mapper/MemberMapper.xml"/>
-		<mapper resource="com/smhrd/mapper/MessageMapper.xml"/>
-		<mapper resource="com/smhrd/mapper/BoardMapper.xml"/>
+
 		
 	</mappers>
 </configuration>

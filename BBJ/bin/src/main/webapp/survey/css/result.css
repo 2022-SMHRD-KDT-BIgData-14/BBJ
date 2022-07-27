@@ -120,7 +120,7 @@
     position: relative;
   }
   /* 
-    .lectures .title의 before(앞), after(뒤)에 원하는 값을 추가할 수 있다.
+    .lectures .title�쓽 before(�븵), after(�뮘)�뿉 �썝�븯�뒗 媛믪쓣 異붽��븷 �닔 �엳�떎.
   */
   .lectures .title:before{
     left: 0;
@@ -158,14 +158,14 @@
   .lectures a{
     cursor: pointer;
     text-decoration: none;
-    /* inherit -> 부모태그로부터 상속받는다. */
+    /* inherit -> 遺�紐⑦깭洹몃줈遺��꽣 �긽�냽諛쏅뒗�떎. */
     color: inherit;
     overflow: hidden;
   }
   .lectures a:hover img{
-    /* .lectures a태그에 마우스를 hover(올렸을 때) img가 1.1배(scaled(1.1)) 커지는 애니메이션을 적용한다 */
-    /* scaled -> 크기, translate -> 방향(x축, y축), rotate -> 방향(degree) */
-    /* transition -> 애니메이션 시간 설정 */
+    /* .lectures a�깭洹몄뿉 留덉슦�뒪瑜� hover(�삱�졇�쓣 �븣) img媛� 1.1諛�(scaled(1.1)) 而ㅼ��뒗 �븷�땲硫붿씠�뀡�쓣 �쟻�슜�븳�떎 */
+    /* scaled -> �겕湲�, translate -> 諛⑺뼢(x異�, y異�), rotate -> 諛⑺뼢(degree) */
+    /* transition -> �븷�땲硫붿씠�뀡 �떆媛� �꽕�젙 */
     transform: scale(1.05);
     /* transition: all 2s; */
   }
@@ -187,8 +187,8 @@
     /* padding : 0 10px 20px == padding : 0 10px 20px 0 */
   }
   .lectures li button{
-    background-color: #7F47DD;
-    color: #FFFFFF;
+    background-color:white;
+    color: darkslategrey;
   }
   .share{
     padding-bottom: 20px;

@@ -1,4 +1,5 @@
-/* @font-face <- ì›¹ í°íŠ¸  */
+/* @font-face <- À¥ ÆùÆ®  */
+
 @font-face {
   font-family: "GmarketSansBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
@@ -36,8 +37,8 @@
 body {
   width: 100%;
   height: 100%;
-  background-color: #faf1be;
-  color: #000000;
+  background-color: lightslategray;
+  color: white;
   font-family: "NEXON Lv1 Gothic OTF";
 }
 
@@ -55,6 +56,7 @@ body {
   width: 100%;
   height: 100%;
   max-width: 500px;
+  top:20px;
 }
 .title {
   text-align: center;
@@ -65,12 +67,13 @@ body {
   font-family: "GmarketSansBold";
   font-size: 50px;
   padding-bottom: 15px;
+  text-align:center;
 }
 
 .sub_title {
   font-size: 20px;
   font-weight: bold;
-  color: #7f47dd;
+  color: darkslategrey;
 }
 
 .intro {
@@ -85,15 +88,19 @@ body {
 
 .type {
   font-size: 25px;
-  /* í•œ ê¸€ìžê°€ ë“¤ì–´ê°ˆ ìˆ˜ ìžˆëŠ” ìœ„ì•„ëž˜ ê°„ê²© */
+  /* ÇÑ ±ÛÀÚ°¡ µé¾î°¥ ¼ö ÀÖ´Â À§¾Æ·¡ °£°Ý */
+
   line-height: 3em;
-  /* em <- fontsizeì˜ ë°°ìˆ˜ ì¦‰, 25pxì˜ 3ë°° 75px */
+
+  /* em <- fontsizeÀÇ ¹è¼ö Áï, 25pxÀÇ 3¹è 75px */
+
   height: 3em;
   overflow: hidden;
 }
 
 .type_list {
   animation: rotate 7s infinite;
+  color: lightblue;
 }
 
 .button {
@@ -111,14 +118,14 @@ body {
   font-size: 20px;
   font-weight: bold;
   background-color: #ffffff;
-  color: #7f47dd;
+  color: darkslategrey;
   cursor: pointer;
   margin-bottom: 20px;
 }
 
 .button button:hover {
   opacity: 0.7;
-  /* button opacity time animation */
+  
   transition: all 1s;
 }
 
@@ -148,17 +155,17 @@ body {
   padding-bottom: 20px;
 }
 
-.weniv {
+.BBJImg {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
 }
 
-.weniv a {
+.BBJImg a {
   width: 100px;
 }
 
-.weniv img {
+.BBJImg img {
   width: 100%;
   height: auto;
 }

@@ -15,19 +15,27 @@ public class JoinService implements Command {
 
 
 		// 2. 데이터 받아오기
-		String email = request.getParameter("email");
+		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		String tel = request.getParameter("tel");
-		String address = request.getParameter("address");
+		String name = request.getParameter("name");
+		String address1 = request.getParameter("address1");
+		String[] address3 = request.getParameterValues("address2");
+		String address2 =null;
 
 		// 확인
-		System.out.println("email:" + email);
+		System.out.println("id:" + id);
 		System.out.println("pw:" + pw);
-		System.out.println("tel:" + tel);
-		System.out.println("address:" + address);
+		System.out.println("name:" + name);
+		System.out.println("address1:" + address1);
+		for(int i=0; i < address3.length;i++) {
+			if(!address3[i].equals("")) {
+				address2 = address3[i];
+				System.out.println(address2);
+			}
+		}
 
 		// 3.DTO로 묶기
-		MemberDTO dto = new MemberDTO(email, pw, tel, address);
+		MemberDTO dto = new MemberDTO(id, pw, name,null,address1,address2);
 
 		// 4.join 메소드 호출
 		int row = new MemberDAO().join(dto);
@@ -43,12 +51,12 @@ public class JoinService implements Command {
 			// ----------------------------------------------------
 			// JoinSuccess.jsp
 			// 회원가입한 이메일 전송
-			request.setAttribute("email", email);// 담아주기 email을 담아줘야 한당~!~!~!~!~!~~
-			moveURL = "./JoinSuccess.jsp";
+			request.setAttribute("id", id);// 담아주기 email을 담아줘야 한당~!~!~!~!~!~~
+			moveURL = "/survey/form.html";
 		} else {
 			System.out.println("회원가입 실패");
 			// Main.jsp
-			moveURL = "./Main.jsp";
+			moveURL = "./member.html";
 		}
 		return moveURL ;
 	}

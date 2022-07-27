@@ -15,22 +15,20 @@
   }
 
   body{
-    background-color: #FAF1BE;
-    color: #000000;
+    background-color: white;
+    color: lightslategray;
     font-family: "NEXON Lv1 Gothic OTF";
   }
   button {
     font-family: "NEXON Lv1 Gothic OTF";
     font-size: 20px;
-    width: 400px;
-    height: 50px;
     padding: 5px;
     border-style: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: lightslategray;
+    color: white;
   }
   button:hover{
     text-decoration: underline;
@@ -187,7 +185,7 @@
     /* padding : 0 10px 20px == padding : 0 10px 20px 0 */
   }
   .lectures li button{
-    background-color: #7F47DD;
+    background-color: darkslategrey;
     color: #FFFFFF;
   }
   .share{
@@ -215,26 +213,50 @@
     margin-bottom: 30px;
   }
   .jejucodingbasecamp_color{
-    background-color: #7F47DD;
+    background-color: darkslategrey;
     color: #ffffff;
   }
-  .weniv {
+  .BBJImg {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
   }
   
-  .weniv a {
+  .BBJImg a {
     width: 100px;
   }
   
-  .weniv img {
+  .BBJImg img {
     width: 100%;
     height: auto;
   }
-  .weniv p{
+  .BBJImg p{
     padding-top: 20px;
     font-size: 10px;
     text-align: center;
     line-height: 1.5;
   }
+
+.overlay{
+	width:100%;
+	height:50px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	
+}
+  
+.logout_Btn {
+	background-color:white;
+  	color: black;
+  	border:1px;
+  	border-color:black;
+  	font-family: "NEXON Lv1 Gothic OTF";
+}
+.update_Btn{
+	background-color:white;
+  	color: black;
+  	border:1px;
+  	border-color:black;
+  	font-family: "NEXON Lv1 Gothic OTF";
+}

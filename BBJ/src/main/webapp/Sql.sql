@@ -10,6 +10,8 @@ constraint u_member12_pk primary key(id));
 select * from u_member
 drop table u_member;
 
+select p.* from pt p, u_member m where p.exercise = m.exercise and p.address1=m.address1 and m.id ='as2'
+
 create table Calender
   (id number(20),
   calenderDate Date,
@@ -35,6 +37,7 @@ PTNAME varchar2(100),
 ADDRESS1 varchar2(100),
 ADDRESS2 varchar2(100),
 IMAGE varchar2(100),
+PROFILE varchar2(100),
 constraint PT_PTNB_pk primary key(PTNB));
 
 select * from PT

@@ -12,10 +12,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PtDTO {
 
-	private BigDecimal PTNB;
-	@NonNull private String EXERCISE;
-	@NonNull private String PTNAME;
-	@NonNull private String ADDRESS1;
-	@NonNull private String ADDRESS2;
-	@NonNull private String IMAGE;
+	private BigDecimal ptnb;
+	@NonNull private String exercise;
+	@NonNull private String ptname;
+	@NonNull private String address1;
+	private String address2;
+	@NonNull private String image;
+	@NonNull private String profile;
 }

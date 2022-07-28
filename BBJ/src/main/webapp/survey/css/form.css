@@ -74,7 +74,8 @@ body {
 .btn_sort {
   justify-content: space-between;
 }
-button,
+/* button, */
+
 .submit_btn {
   width: 100px;
   height: 40px;
@@ -88,8 +89,23 @@ button,
   cursor: pointer;
 }
 
-button:hover,
+/* button:hover,
 .submit_btn:hover {
   color: white;
   background-color: lightslategray;
+} */
+
+.logout_Btn {
+	background-color:white;
+  	color: black;
+  	border:1px;
+  	border-color:black;
+  	font-family: "NEXON Lv1 Gothic OTF";
+}
+.update_Btn{
+	background-color:white;
+  	color: black;
+  	border:1px;
+  	border-color:black;
+  	font-family: "NEXON Lv1 Gothic OTF";
 }

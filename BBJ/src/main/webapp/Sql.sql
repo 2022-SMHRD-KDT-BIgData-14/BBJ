@@ -8,6 +8,7 @@ address2 varchar2(20),
 constraint u_member12_pk primary key(id));
 
 select * from u_member
+<<<<<<< HEAD
 
 insert into u_member values('as5','asd','test','pilates','광산구','쌍촌동')
 
@@ -16,13 +17,17 @@ delete from u_member where id= 'as'
 
 
 --drop table u_member;
+=======
+drop table u_member;
+drop table Calendar;
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 
-create table Calender
-  (id number(20),
-  calenderDate Date,
+create table Calendar
+  (id varchar2(20),
+  calendarDate Date,
   exercise varchar2(20),
-  memo varchar2(100),
-  constraint Calender_id_pk primary key(ID)
+  memo varchar2(100),  
+  constraint Calendar_id_pk primary key(ID)
      );
      
   CREATE SEQUENCE num_pt

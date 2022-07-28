@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@page import="com.smhrd.model.YtDAO"%>
 <%@page import="com.smhrd.model.YtDTO"%>
 <%@page import="java.util.ArrayList"%>
@@ -227,6 +228,189 @@
 								</ul>
 							</div>
 						</div>
+=======
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>유튜브 영상 추천</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="../main/css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="../main/css/animate.css">
+
+<link rel="stylesheet" href="../main/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../main/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../main/css/magnific-popup.css">
+
+<link rel="stylesheet" href="../main/css/aos.css">
+
+<link rel="stylesheet" href="../main/css/ionicons.min.css">
+
+<link rel="stylesheet" href="../main/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="../main/css/jquery.timepicker.css">
+
+
+<link rel="stylesheet" href="../main/css/flaticon.css">
+<link rel="stylesheet" href="../main/css/icomoon.css">
+<link rel="stylesheet" href="../main/css/main_style.css">
+</head>
+<body>
+
+	<!-- 카테고리 화면 -->
+	<div id="colorlib-page">
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary"
+			class="js-fullheight text-center">
+			<h1 id="colorlib-logo">
+				<a href="../main/main_index.jsp"><img
+					src="../main/images/BBJ_logo_grey.png" width="200px" height="200px"></a>
+			</h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="../main/main_index.jsp">운동 추천</a></li>
+					<li><a href="../main/pt_academy.jsp">트레이너 / 체육관</a></li>
+					<li class="colorlib-active"><a href="../main/youtube.jsp">추천
+							영상</a></li>
+					<li><a href="../calendar/calendar_index.jsp">캘린더</a></li>
+					<li><a href="../main/survey.jsp">설문조사 다시하기</a></li>
+					<li><a href="../main/update_member.jsp">개인정보수정</a></li>
+				</ul>
+			</nav>
+
+		</aside>
+		<!-- END COLORLIB-ASIDE -->
+
+		<!-- 상단메뉴바 -->
+		<div class="overlay">
+			<!-- 로그아웃/회원정보수정 버튼 생성 -->
+			<div class="logout_update_btn" style="float: right;">
+				<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
+				<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
+			</div>
+		</div>
+
+		<!-- 메인 화면 -->
+		<div id="colorlib-main">
+			<!-- 메인 타이틀 -->
+			<div id="main_MainTitle">
+				<h1 class="main_MainTitle">추천 유튜브 영상</h1>
+			</div>
+
+			<!-- 영상 추천 파트 -->
+			<section class="ftco-section">
+				<div class="container">
+					
+
+
+							<!-- 추천 유튜브 1 -->
+							<div class="col-md-6">
+								<div class="blog-entry ftco-animate">
+									<!-- 유튜브 영상 -->
+									<a href="#" class="img img-2"
+										style="background-image: url(images/image_2.jpg);"></a>
+
+									<!-- 유튜브 영상 소개 -->
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">1st</a></span>
+
+										<h3 class="mb-4">유튜버 이름</h3>
+
+										<p class="mb-4">유튜브제목</p>
+									</div>
+								</div>
+							</div>
+							<!-- 추천 유튜브 2 -->
+							<div class="col-md-6">
+								<div class="blog-entry ftco-animate">
+									<!-- 유튜브 영상 -->
+									<a href="#" class="img img-2"
+										style="background-image: url(images/image_2.jpg);"></a>
+
+									<!-- 유튜브 영상 소개 -->
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">2nd</a></span>
+
+										<h3 class="mb-4">유튜버 이름</h3>
+
+										<p class="mb-4">유튜브제목</p>
+									</div>
+								</div>
+							</div>
+							<!-- 추천 유튜브 3 -->
+							<div class="col-md-6">
+								<div class="blog-entry ftco-animate">
+									<!-- 유튜브 영상 -->
+									<a href="#" class="img img-2"
+										style="background-image: url(images/image_2.jpg);"></a>
+
+									<!-- 유튜브 영상 소개 -->
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">3rd</a></span>
+
+										<h3 class="mb-4">유튜버 이름</h3>
+
+										<p class="mb-4">유튜브제목</p>
+									</div>
+								</div>
+							</div>
+							<!-- 추천 유튜브 4 -->
+							<div class="col-md-6">
+								<div class="blog-entry ftco-animate">
+									<!-- 유튜브 영상 -->
+									<a href="#" class="img img-2"
+										style="background-image: url(images/image_2.jpg);"></a>
+
+									<!-- 유튜브 영상 소개 -->
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">4th</a></span>
+
+										<h3 class="mb-4">유튜버 이름</h3>
+
+										<p class="mb-4">유튜브제목</p>
+									</div>
+								</div>
+							</div>
+							<!-- 추천 유튜브 5 -->
+							<div class="col-md-6">
+								<div class="blog-entry ftco-animate">
+									<!-- 유튜브 영상 -->
+									<a href="#" class="img img-2"
+										style="background-image: url(images/image_2.jpg);"></a>
+
+									<!-- 유튜브 영상 소개 -->
+									<div class="text text-2 pt-2 mt-3">
+										<span class="category mb-3 d-block"><a href="#">5th</a></span>
+
+										<h3 class="mb-4">유튜버 이름</h3>
+
+										<p class="mb-4">유튜브제목</p>
+									</div>
+								</div>
+
+
+							</div>
+
+						
+			</section>
+			<!-- 영상 추천 파트 끝-->
+
+
+			<footer class="ftco-footer ftco-bg-dark ftco-section">
+				<div class="container px-md-5">
+					<div class="row mb-5">
+						
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md">
 							<div class="ftco-footer-widget mb-4">
 								<h2 class="ftco-heading-2">Have a Questions?</h2>

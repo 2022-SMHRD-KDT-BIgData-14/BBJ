@@ -77,12 +77,15 @@ CREATE SEQUENCE num_YTvideo
   
   
   
- create table Academy(
+create table Academy(
 AcademyNB Varchar2(100) primary key,
-Academy Varchar2(100) not null,
-Address1 Varchar2(100) not null,
-Address2 Varchar2(100) not null,
-Exercise Varchar2(100) not null);
+Academy Varchar2(100),
+Address1 Varchar2(100),
+Address2 Varchar2(100),
+Exercise Varchar2(100));
+
+
+
 
 CREATE SEQUENCE num_Academy
   START WITH 1
@@ -91,7 +94,14 @@ CREATE SEQUENCE num_Academy
   MINVALUE 1
   NOCYCLE;
   
+  select *from Academy
   
+
+insert into Academy values()
+insert into Academy values(num_Academy.NEXTVAL,'test','test','test','test')
+
+drop table Academy cascade constraints;
+DROP SEQUENCE num_Academy;  
   
   
   
@@ -106,6 +116,8 @@ insert into YTVIDEO values(num_YTvideo.NEXTVAL,'test','test',SYSDATE,'test')
   
 =======
 select * from ACADEMY;
+
+  
 
 insert into ACADEMY
 values (ACADEMY_seq.nextval, 'test', 'test', 'test', 'test');

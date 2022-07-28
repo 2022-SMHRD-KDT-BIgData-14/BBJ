@@ -50,4 +50,5 @@ public class MemberDAO {
 		
 		return row;
 	}
+
 }

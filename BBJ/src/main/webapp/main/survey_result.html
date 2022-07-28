@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="../main/css/flaticon.css">
     <link rel="stylesheet" href="../main/css/icomoon.css">
     <link rel="stylesheet" href="../main/css/main_style.css">
+    
+    <!-- survey-result.html css 연결 -->
+    <title>나의 운동 유형 찾기</title>
+	<link rel="stylesheet" href="../survey/css/reset.css">
+	<link rel="stylesheet" href="../survey/css/result.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
   <body>
 
@@ -33,37 +39,96 @@
 		
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 		<aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
-			<h1 id="colorlib-logo"><a href="../main/main_index.html"><img src="../main/images/BBJ_logo_grey.png" width="300px" height="300px"></a></h1>
+			<h1 id="colorlib-logo"><a href="../main/main_index.html"><img src="../main/images/BBJ_logo_grey.png" width="200px" height="200px"></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li><a href="../main/main_index.html">운동 추천</a></li>
-					<li><a href="../main/pt.html">PT 트레이너</a></li>
-					<li class="colorlib-active"><a href="../main/academy.html">체육관</a></li>
+					<li><a href="../main/pt_academy.html">트레이너 / 체육관</a></li>
 					<li><a href="../main/youtube.html">추천 영상</a></li>
+<<<<<<< HEAD
 					<li><a href="../calendar/calendar_index.html">캘린더</a></li>
 					<li><a href="../main/survey.html">설문조사 다시하기</a></li>
+=======
+					<li><a href="../main/calendar.html">캘린더</a></li>
+					<li class="colorlib-active"><a href="../main/survey.html">설문조사 다시하기</a></li>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 					<li><a href="../main/update_member.html">개인정보수정</a></li>
 				</ul>
 			</nav>
 
-			<div class="colorlib-footer">
-				<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-				<ul>
-					<li><a href="#"><i class="icon-facebook"></i></a></li>
-					<li><a href="#"><i class="icon-twitter"></i></a></li>
-					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin"></i></a></li>
-				</ul>
-			</div>
+			
 		</aside> <!-- END COLORLIB-ASIDE -->
-		<div id="colorlib-main">
-		<div class="test" style="float:right;">
-				<!-- 로그아웃/회원정보수정 버튼 생성 -->
+		
+		<!-- 상단메뉴바 -->
+		<div class="overlay">
+			<!-- 로그아웃/회원정보수정 버튼 생성 -->
+			<div class="logout_update_btn" style="float: right;">
 				<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
 				<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
+			</div>
 		</div>
-			<section class="ftco-section contact-section">
+		
+		<!-- 설문조사 결과창 -->
+		<div id="colorlib-main">
+			<div>
+				<section id="main_contents">
+		<div class="wrapper">
+			<div class="result">
+				<div class="titles">
+					<h3>맞춤형 운동은!?</h3>
+					<h1 style="padding-top:20px; padding-bottom:20px">추천받은 운동 종목</h1>
+				</div>
+				
+				<!-- 운동 종목 결과 사진 -->
+				<div class="result_img">
+					<img src="" alt="">
+				</div>
+			</div>
+			<!-- <div class="result_explains">
+				<div class="explain">
+					<h3 class="title">나와 맞는 개발 유형은 백엔드 개발자!?</h3>
+					<ul>
+						<li>hello world</li>
+						<li>hello world</li>
+						<li>hello world</li>
+					</ul>
+				</div>
+				
+			</div> -->
+			<!-- <div class="lectures">
+				<h3 class="title">운동 추천</h3>
+				<ul>
+					<li><a href="../main/main_index.html" target="_blank"> <img
+							src="../main/images/BBJ_logo_grey.png" alt="BBJ">
+							<h3>Python 부트캠프</h3>
+							<button type="button">추천 서비스 이용하기</button>
+					</a></li>
+				</ul>
+			</div> -->
+			
+			<div class="buttons">
+				<ul>
+					<li>
+						<a href="./survey.html">
+							<button class="restart" type="button">설문조사 다시하기</button>
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div class="weniv">
+				<!--  <a href="http://www.paullab.co.kr"> <img
+					src="../img/weniv_logo_black.png" alt="weniv" />
+				</a> -->
+			</div>
+			<p>배부르조 운동하조</p>
+			<p>BBJ</p>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/result.js"></script>
+			</div>
+			
+			<!-- <section class="ftco-section contact-section">
 	      <div class="container">
 	        <div class="row d-flex mb-5 contact-info">
 	          <div class="col-md-12 mb-4">
@@ -110,34 +175,13 @@
 	          </div>
 	        </div>
 	      </div>
-	    </section>
+	    </section> -->
 
+		<!-- 하단 메뉴바 -->
 	    <footer class="ftco-footer ftco-bg-dark ftco-section">
 	      <div class="container px-md-5">
 	        <div class="row mb-5">
-	          <div class="col-md">
-	            <div class="ftco-footer-widget mb-4 ml-md-4">
-	              <h2 class="ftco-heading-2">Category</h2>
-	              <ul class="list-unstyled categories">
-	                <li><a href="#">Photography <span>(6)</span></a></li>
-	                <li><a href="#">Fashion <span>(8)</span></a></li>
-	                <li><a href="#">Technology <span>(2)</span></a></li>
-	                <li><a href="#">Travel <span>(2)</span></a></li>
-	              </ul>
-	            </div>
-	          </div>
-	          <div class="col-md">
-	             <div class="ftco-footer-widget mb-4">
-	              <h2 class="ftco-heading-2">Archives</h2>
-	              <ul class="list-unstyled categories">
-	              	<li><a href="#">October 2018 <span>(6)</span></a></li>
-	                <li><a href="#">September 2018 <span>(6)</span></a></li>
-	                <li><a href="#">August 2018 <span>(8)</span></a></li>
-	                <li><a href="#">July 2018 <span>(2)</span></a></li>
-	                <li><a href="#">June 2018 <span>(7)</span></a></li>
-	              </ul>
-	            </div>
-	          </div>
+	          
 	          <div class="col-md">
 	            <div class="ftco-footer-widget mb-4">
 	            	<h2 class="ftco-heading-2">Have a Questions?</h2>

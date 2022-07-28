@@ -286,7 +286,8 @@ h6 span{
 	/* transform:translate(-50%, -50%); */
 }
 .logo img {
-	height: 200px;
+
+	height: 100px;
 	width: auto;
 	display: block;
 }

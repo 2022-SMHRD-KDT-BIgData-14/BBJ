@@ -43,7 +43,7 @@ public class FrontController extends HttpServlet {
 		} else if (result.equals("JoinService.do")) {
 			service = new JoinService();
 
-		} else if (result.equals("LogoutService.do")) {
+		} else if (result.equals("goutService.do")) {
 			service = new LogoutService();
 
 		} else if (result.equals("dateService.do")) {
@@ -52,7 +52,7 @@ public class FrontController extends HttpServlet {
 		} else if (result.equals("leteMemberService.do")) {
 			service = new DeleteMemberService();
 			
-		} else if (result.equals("Service.do")) {
+		} else if (result.equals("YtService.do")) {
 			service = new YtService();
 
 		}

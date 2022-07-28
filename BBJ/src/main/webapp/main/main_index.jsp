@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%  %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +37,7 @@
 </head>
 
 <body>
-	<!-- ī�װ��� ȭ�� -->
+	<!-- 카테고리 화면 -->
 	<div id="colorlib-page">
 		<div>
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
@@ -49,12 +50,12 @@
 				</h1>
 				<nav id="colorlib-main-menu" role="navigation">
 					<ul>
-						<li class="colorlib-active"><a href="../main/main_index.jsp">�
-								��õ</a></li>
-						<li><a href="../main/pt_academy.jsp">Ʈ���̳� / ü����</a></li>
-						<li><a href="../main/youtube.jsp">��õ ����</a></li>
-						<li><a href="../calendar/calendar_index.jsp">Ķ����</a></li>
-						<li><a href="../main/survey.jsp">�������� �ٽ��ϱ�</a></li>
+						<li class="colorlib-active"><a href="../main/main_index.jsp">운동
+								추천</a></li>
+						<li><a href="../main/pt_academy.jsp">트레이너 / 체육관</a></li>
+						<li><a href="Ytservice.do">추천 영상</a></li>
+						<li><a href="../calendar/calendar_index.jsp">캘린더</a></li>
+						<li><a href="../main/survey.jsp">설문조사 다시하기</a></li>
 					
 					</ul>
 				</nav>
@@ -65,28 +66,28 @@
 
 
 		<div id="colorlib-main">
-			<!-- ��ܸ޴��� -->
+			<!-- 상단메뉴바 -->
 			<div class="overlay">
-				<!-- �α׾ƿ�/ȸ���������� ��ư ���� -->
+				<!-- 로그아웃/회원정보수정 버튼 생성 -->
 				<div class="logout_update_btn" style="float: right;">
-					<a href="LogoutService.do"><button class="logout_Btn">�α׾ƿ�</button></a>
-					<a href="../main/UpdateMember.jsp"><button class="update_Btn">������������</button></a>
+					<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
+					<a href="../main/UpdateMember.jsp"><button class="update_Btn">개인정보수정</button></a>
 				</div>
 			</div>
 		</div>
 
-		<!-- ���� ȭ�� -->
+		<!-- 메인 화면 -->
 		<div>
-			<h1 class="main_MainTitle">��õ ��� oo</h1>
+			<h1 class="main_MainTitle">추천 운동은 oo</h1>
 		</div>
 		<div style="height: 600px">
 			<hr>
 
-			<h1>��õ � ���� �� ����</h1>
+			<h1>추천 운동 사진 및 설명</h1>
 		</div>
-		<!-- ����ȭ�� �� -->
+		<!-- 메인화면 끝 -->
 
-		<!-- �ϴܸ޴���-->
+		<!-- 하단메뉴바-->
 		<footer class="ftco-footer ftco-bg-dark ftco-section">
 			<div class="container px-md-5">
 				<div class="row mb-5">
@@ -97,7 +98,7 @@
 							<div class="block-23 mb-3">
 								<ul>
 									<li><span class="icon icon-map-marker"></span><span
-										class="text">����Ʈ���簳�߿�</span></li>
+										class="text">스마트인재개발원</span></li>
 									<li><a href="#"><span class="icon icon-phone"></span><span
 											class="text">0507-1477-8852</span></a></li>
 									<li><a href="#"><span class="icon icon-envelope"></span><span

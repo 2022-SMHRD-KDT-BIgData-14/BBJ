@@ -34,7 +34,7 @@ public class LoginService implements Command {
 			System.out.println("로그인 성공");
 			HttpSession session = request.getSession();
 			session.setAttribute("info",info);
-			moveURL="../main/admin.html";
+			moveURL="../main/admin.jsp";
 		}
 		else if(info != null) {
 			System.out.println("로그인 성공");
@@ -42,10 +42,10 @@ public class LoginService implements Command {
 			HttpSession session = request.getSession();
 			session.setAttribute("info",info);
 			//session의 영역의 browser까지
-			moveURL="../main/main_index.html";
+			moveURL="../main/main_index.jsp";
 		}else {
 			System.out.println("로그인 실패");
-			moveURL="../insert/member.html";
+			moveURL="../insert/member.jsp";
 		}
 
 		

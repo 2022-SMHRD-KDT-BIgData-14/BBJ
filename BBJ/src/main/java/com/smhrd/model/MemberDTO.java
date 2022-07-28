@@ -13,7 +13,7 @@ public class MemberDTO {
 	@NonNull private String id;
 	@NonNull private String pw;
 	private String name;
-	@NonNull private String exercise;	
+	private String exercise;	
 	private String address1;
 	private String address2;
 }

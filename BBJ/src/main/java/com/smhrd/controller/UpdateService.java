@@ -46,12 +46,12 @@ public class UpdateService implements Command {
 		// session에 잇는 info도 업데이트
 		session.setAttribute("info", dto);
 		if(id.equals("admin")) {
-			moveURL="../main/admin.html";
+			moveURL="../main/admin.jsp";
 		}else {
-		moveURL="../main/member.html";}
+		moveURL="../main/member.jsp";}
 	} else {
 		System.out.println("수정 실패");
-		moveURL="../main/main_index.html";
+		moveURL="../main/main_index.jsp";
 	}
 	return moveURL;
 	

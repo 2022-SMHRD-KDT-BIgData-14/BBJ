@@ -8,7 +8,14 @@ address2 varchar2(20),
 constraint u_member12_pk primary key(id));
 
 select * from u_member
-drop table u_member;
+
+insert into u_member values('as5','asd','test','pilates','광산구','쌍촌동')
+
+delete from u_member where id= 'as'
+
+
+
+--drop table u_member;
 
 create table Calender
   (id number(20),
@@ -37,16 +44,24 @@ ADDRESS2 varchar2(100),
 IMAGE varchar2(100),
 constraint PT_PTNB_pk primary key(PTNB));
 
-select * from PT
+select * from YTvideo
 
 
 
 create table YTvideo(
 VideoNB Number primary key,
-VideoNm Varchar2(250) not null,
-URL Varchar2(250) not null,
-CollectionDate Date not null,
-Exercise Varchar2(100) not null);
+VideoNm Varchar2(250),
+URL Varchar2(250),
+CollectionDate Date,
+Exercise Varchar2(250),
+Lookup Varchar2(100),
+writer Varchar2(200)
+);
+
+
+select DISTINCT writer, VideoNm, URL from u_member u, YTvideo y where u.exercise=y.exercise and y.exercise='pilates' and y.lookup>100000 and rownum<=5
+-- select id, exercise, name, url from 회원정보 u, 영상정보 y where u.exercise = y.exercise and u.id = 'shininho';
+
 
 
 DROP table YTvideo

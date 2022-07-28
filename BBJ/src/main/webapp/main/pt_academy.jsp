@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@page import="com.smhrd.model.PtDAO"%>
 <%@page import="com.smhrd.model.PtDTO"%>
 <%@page import="java.util.ArrayList"%>
@@ -304,6 +305,308 @@
 				</div>
 			</section>
 			<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú ÌîÑÎ†àÏûÑ ÎÅù -->
+=======
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Elen - Free Bootstrap 4 Template by Colorlib</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="../main/css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="../main/css/animate.css">
+
+<link rel="stylesheet" href="../main/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../main/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="../main/css/magnific-popup.css">
+
+<link rel="stylesheet" href="../main/css/aos.css">
+
+<link rel="stylesheet" href="../main/css/ionicons.min.css">
+
+<link rel="stylesheet" href="../main/css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="../main/css/jquery.timepicker.css">
+
+
+<link rel="stylesheet" href="../main/css/flaticon.css">
+<link rel="stylesheet" href="../main/css/icomoon.css">
+<link rel="stylesheet" href="../main/css/main_style.css">
+
+</head>
+<body>
+
+
+	<div id="colorlib-page">
+		<div id="top-fix-category"></div>
+
+		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+		<aside id="colorlib-aside" role="complementary"
+			class="js-fullheight text-center">
+			<h1 id="colorlib-logo">
+				<a href="../main/main_index.jsp"><img
+					src="../main/images/BBJ_logo_grey.png" width="200px" height="200px"></a>
+			</h1>
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a href="../main/main_index.jsp">øÓµø √ﬂ√µ</a></li>
+					<li class="colorlib-active"><a href="../main/pt_academy.jsp">∆Æ∑π¿Ã≥ 
+							/ √º¿∞∞¸</a></li>
+					<li><a href="../main/youtube.jsp">√ﬂ√µ øµªÛ</a></li>
+					<li><a href="../calendar/calendar_index.jsp">ƒ∂∏∞¥ı</a></li>
+					<li><a href="../main/survey.jsp">º≥πÆ¡∂ªÁ ¥ŸΩ√«œ±‚</a></li>
+					<li><a href="../main/update_member.jsp">∞≥¿Œ¡§∫∏ºˆ¡§</a></li>
+				</ul>
+			</nav>
+
+			<div class="colorlib-footer">
+				<p>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					All rights reserved | This template is made with <i
+						class="icon-heart" aria-hidden="true"></i> by <a
+						href="https://colorlib.com" target="_blank">Colorlib</a>
+				<ul>
+					<li><a href="#"><i class="icon-facebook"></i></a></li>
+					<li><a href="#"><i class="icon-twitter"></i></a></li>
+					<li><a href="#"><i class="icon-instagram"></i></a></li>
+					<li><a href="#"><i class="icon-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</aside>
+		<!-- END COLORLIB-ASIDE -->
+
+		<!-- ªÛ¥‹∏ﬁ¥∫πŸ -->
+		<div class="overlay">
+			<!-- ∑Œ±◊æ∆øÙ/»∏ø¯¡§∫∏ºˆ¡§ πˆ∆∞ ª˝º∫ -->
+			<div class="logout_update_btn" style="float: right;">
+				<a href="LogoutService.do"><button class="logout_Btn">∑Œ±◊æ∆øÙ</button></a>
+				<a href="UpdateService.do"><button class="update_Btn">∞≥¿Œ¡§∫∏ºˆ¡§</button></a>
+			</div>
+		</div>
+
+		<!-- ∏ﬁ¿Œ»≠∏È -->
+		<div id="colorlib-main">
+			<!-- ∏ﬁ¿Œ ≈∏¿Ã∆≤(∆Æ∑π¿Ã≥ √ﬂ√µ) -->
+			<div id="main_MainTitle">
+				<h1 class="main_MainTitle">√ﬂ√µ ∆Æ∑π¿Ã≥ </h1>
+			</div>
+
+			<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ (ªÁ¡¯)  -->
+			<section class="ftco-section">
+				<div class="container">
+					<div class="row">
+
+						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 1 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="#" class="img img-2"
+									style="background-image: url(../main/images/image_1.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">1st</a></span>
+									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
+									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
+									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+
+									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
+									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+
+									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<a href="#"
+										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
+										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 2 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="#" class="img img-2"
+									style="background-image: url(../main/images/image_1.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">2nd</a></span>
+									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
+									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
+									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+
+									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
+									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+
+									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<a href="#"
+										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
+										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+								</div>
+							</div>
+						</div>
+						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 3 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="#" class="img img-2"
+									style="background-image: url(../main/images/image_1.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">3rd</a></span>
+									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
+									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
+									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+
+									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
+									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+
+									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<a href="#"
+										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
+										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+								</div>
+							</div>
+						</div>
+						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 4 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="#" class="img img-2"
+									style="background-image: url(../main/images/image_1.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">4th</a></span>
+									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
+									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
+									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+
+									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
+									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+
+									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<a href="#"
+										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
+										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 5 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								<a href="#" class="img img-2"
+									style="background-image: url(../main/images/image_1.jpg);"></a>
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">5th</a></span>
+									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
+									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
+									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+
+									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
+									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+
+									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<a href="#"
+										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
+										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ «¡∑π¿” ≥° -->
+
+			<hr>
+
+			<!-- ∏ﬁ¿Œ ≈∏¿Ã∆≤ (√º¿∞∞¸ √ﬂ√µ) -->
+			<div id="main_MainTitle">
+				<h1 class="main_MainTitle">√ﬂ√µ √º¿∞∞¸</h1>
+			</div>
+
+			<!-- √º¿∞∞¸ √ﬂ√µ «¡∑π¿” Ω√¿€ -->
+			<section class="ftco-section">
+				<div class="container">
+					<div class="row">
+
+						<!-- √º¿∞∞¸ √ﬂ√µ 1 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">1st</a></span>
+									<!-- √º¿∞∞¸ ¿Ã∏ß -->
+									<h3 class="mb-4">√º¿∞∞¸ ¿Ã∏ß</h3>
+									<!-- √º¿∞∞¸ ¡÷º“(±∏) -->
+									<p class="mb-4">√º¿∞∞¸ ¡÷º“(±∏)</p>
+								</div>
+							</div>
+						</div>
+						<!-- √º¿∞∞¸ √ﬂ√µ 2 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">2nd</a></span>
+									<!-- √º¿∞∞¸ ¿Ã∏ß -->
+									<h3 class="mb-4">√º¿∞∞¸ ¿Ã∏ß</h3>
+									<!-- √º¿∞∞¸ ¡÷º“(±∏) -->
+									<p class="mb-4">√º¿∞∞¸ ¡÷º“(±∏)</p>
+								</div>
+							</div>
+						</div>
+						<!-- √º¿∞∞¸ √ﬂ√µ 3 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">3rd</a></span>
+									<!-- √º¿∞∞¸ ¿Ã∏ß -->
+									<h3 class="mb-4">√º¿∞∞¸ ¿Ã∏ß</h3>
+									<!-- √º¿∞∞¸ ¡÷º“(±∏) -->
+									<p class="mb-4">√º¿∞∞¸ ¡÷º“(±∏)</p>
+								</div>
+							</div>
+						</div>
+						<!-- √º¿∞∞¸ √ﬂ√µ 4 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">4th</a></span>
+									<!-- √º¿∞∞¸ ¿Ã∏ß -->
+									<h3 class="mb-4">√º¿∞∞¸ ¿Ã∏ß</h3>
+									<!-- √º¿∞∞¸ ¡÷º“(±∏) -->
+									<p class="mb-4">√º¿∞∞¸ ¡÷º“(±∏)</p>
+								</div>
+							</div>
+						</div>
+						<!-- √º¿∞∞¸ √ﬂ√µ 5 -->
+						<div class="col-md-4">
+							<div class="blog-entry ftco-animate">
+								
+								<div class="text text-2 pt-2 mt-3">
+									<span class="category mb-3 d-block"><a href="#">5th</a></span>
+									<!-- √º¿∞∞¸ ¿Ã∏ß -->
+									<h3 class="mb-4">√º¿∞∞¸ ¿Ã∏ß</h3>
+									<!-- √º¿∞∞¸ ¡÷º“(±∏) -->
+									<p class="mb-4">√º¿∞∞¸ ¡÷º“(±∏)</p>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</section>
+			<!-- √º¿∞∞¸ √ﬂ√µ «¡∑π¿” ≥° -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 
 
 

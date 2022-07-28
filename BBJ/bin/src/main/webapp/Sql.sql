@@ -37,8 +37,8 @@ ADDRESS2 varchar2(100),
 constraint PT_PTNB_pk primary key(PTNB));
 
 
-
-
+select  salary from u_member u, YTvideo y where  and salary>=15000
+-- select id, exercise, name, url from 회원정보 u, 영상정보 y where u.exercise = y.exercise and u.id = 'shininho';
 
 create table YTvideo(
 VideoNB Number primary key,

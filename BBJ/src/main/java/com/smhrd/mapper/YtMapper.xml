@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.smhrd.mapper.YtMapper">
+
+	<select id="Yt" parameterType="YtDTO" resultType="YtDTO">
+		select DISTINCT writer VideoNm, URL from u_member u, YTvideo y where u.exercise=y.exercise and y.exercise=#{exercise} and y.lookup>10000
+	</select>
+</mapper>

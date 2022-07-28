@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%  %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,76 +44,80 @@
 			<aside id="colorlib-aside" role="complementary"
 				class="js-fullheight text-center">
 				<h1 id="colorlib-logo">
-					<a href="../main/main_index.html"><img
+					<a href="../main/main_index.jsp"><img
 						src="../main/images/BBJ_logo_grey.png" width="200px"
 						height="200px"></a>
 				</h1>
 				<nav id="colorlib-main-menu" role="navigation">
 					<ul>
-						<li class="colorlib-active"><a href="../main/main_index.html">운동
+						<li class="colorlib-active"><a href="../main/main_index.jsp">운동
 								추천</a></li>
-						<li><a href="../main/pt_academy.html">트레이너 / 체육관</a></li>
-						<li><a href="../main/youtube.html">추천 영상</a></li>
-						<li><a href="../calendar/calendar_index.html">캘린더</a></li>
-						<li><a href="../main/survey.html">설문조사 다시하기</a></li>
-						<li><a href="../main/update.jsp">개인정보수정</a></li>
+						<li><a href="../main/pt_academy.jsp">트레이너 / 체육관</a></li>
+						<li><a href="YtService.do">추천 영상</a></li>
+						<li><a href="../calendar/calendar_index.jsp">캘린더</a></li>
+						<li><a href="../main/survey.jsp">설문조사 다시하기</a></li>
+					
 					</ul>
 				</nav>
 
-			</aside><!-- END COLORLIB-ASIDE -->
+			</aside>
+			<!-- END COLORLIB-ASIDE -->
 		</div>
-		
+
 
 		<div id="colorlib-main">
-				<!-- 상단메뉴바 -->
-				<div class="overlay">
-					<!-- 로그아웃/회원정보수정 버튼 생성 -->
-					<div class="logout_update_btn" style="float: right;">
-						<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
-						<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
-						<a href="../main/ShowMember.jsp"><button class="update_Btn">회원정보보기</button></a>
-					</div>
+			<!-- 상단메뉴바 -->
+			<div class="overlay">
+				<!-- 로그아웃/회원정보수정 버튼 생성 -->
+				<div class="logout_update_btn" style="float: right;">
+					<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
+					<a href="../main/UpdateMember.jsp"><button class="update_Btn">개인정보수정</button></a>
 				</div>
+			</div>
+		</div>
+
 		<!-- 메인 화면 -->
 		<div>
 			<h1 class="main_MainTitle">추천 운동은 oo</h1>
 		</div>
-		<div style="height:600px">
+		<div style="height: 600px">
 			<hr>
 
 			<h1>추천 운동 사진 및 설명</h1>
-		</div><!-- 메인화면 끝 -->
-			
-			<!-- 하단메뉴바-->
-			<footer class="ftco-footer ftco-bg-dark ftco-section">
-				<div class="container px-md-5">
-					<div class="row mb-5">
-						
-						<div class="col-md">
-							<div class="ftco-footer-widget mb-4">
-								<h2 class="ftco-heading-2">Have a Questions?</h2>
-								<div class="block-23 mb-3">
-									<ul>
-										<li><span class="icon icon-map-marker"></span><span
-											class="text">스마트인재개발원</span></li>
-										<li><a href="#"><span class="icon icon-phone"></span><span
-												class="text">0507-1477-8852</span></a></li>
-										<li><a href="#"><span class="icon icon-envelope"></span><span
-												class="text">smhrd</span></a></li>
-									</ul>
-								</div>
+		</div>
+		<!-- 메인화면 끝 -->
+
+		<!-- 하단메뉴바-->
+		<footer class="ftco-footer ftco-bg-dark ftco-section">
+			<div class="container px-md-5">
+				<div class="row mb-5">
+
+					<div class="col-md">
+						<div class="ftco-footer-widget mb-4">
+							<h2 class="ftco-heading-2">Have a Questions?</h2>
+							<div class="block-23 mb-3">
+								<ul>
+									<li><span class="icon icon-map-marker"></span><span
+										class="text">스마트인재개발원</span></li>
+									<li><a href="#"><span class="icon icon-phone"></span><span
+											class="text">0507-1477-8852</span></a></li>
+									<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">smhrd</span></a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
-					
-						<!-- END COLORLIB-PAGE -->
+				</div>
 
-						<!-- loader -->
-						<div id="ftco-loader" class="show fullscreen">
-							<svg class="circular" width="48px" height="48px">
+				<!-- END COLORLIB-PAGE -->
+
+				<!-- loader -->
+				<div id="ftco-loader" class="show fullscreen">
+					<svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none"
-									stroke-width="4" stroke="#eeeeee" />
+							stroke-width="4" stroke="#eeeeee" />
 			<circle class="path" cx="24" cy="24" r="22" fill="none"
+
 									stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
 						</div>
 
@@ -133,8 +140,12 @@
 							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 						<script src="../main/js/google-map.js"></script>
 						<script src="../main/js/main.js"></script>
+							stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
+				</div>
+			</div>
+		</footer>
+
 </body>
 
 
 </html>
-<!--  -->

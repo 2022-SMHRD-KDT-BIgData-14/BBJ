@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +36,7 @@
 </head>
 
 <body>
-	<!-- 카테고리 화면 -->
+	<!-- ī�װ��� ȭ�� -->
 	<div id="colorlib-page">
 		<div>
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
@@ -47,13 +49,13 @@
 				</h1>
 				<nav id="colorlib-main-menu" role="navigation">
 					<ul>
-						<li class="colorlib-active"><a href="../main/main_index.html">운동
-								추천</a></li>
-						<li><a href="../main/pt_academy.html">트레이너 / 체육관</a></li>
-						<li><a href="../main/youtube.html">추천 영상</a></li>
-						<li><a href="../calendar/calendar_index.html">캘린더</a></li>
-						<li><a href="../main/survey.html">설문조사 다시하기</a></li>
-						<li><a href="../main/update.jsp">개인정보수정</a></li>
+						<li class="colorlib-active"><a href="../main/main_index.html">�
+								��õ</a></li>
+						<li><a href="../main/pt_academy.html">Ʈ���̳� / ü����</a></li>
+						<li><a href="../main/youtube.html">��õ ����</a></li>
+						<li><a href="../calendar/calendar_index.html">Ķ����</a></li>
+						<li><a href="../main/survey.html">�������� �ٽ��ϱ�</a></li>
+						<li><a href="../main/update.jsp">������������</a></li>
 					</ul>
 				</nav>
 
@@ -62,26 +64,26 @@
 		
 
 		<div id="colorlib-main">
-				<!-- 상단메뉴바 -->
+				<!-- ��ܸ޴��� -->
 				<div class="overlay">
-					<!-- 로그아웃/회원정보수정 버튼 생성 -->
+					<!-- �α׾ƿ�/ȸ���������� ��ư ���� -->
 					<div class="logout_update_btn" style="float: right;">
-						<a href="LogoutService.do"><button class="logout_Btn">로그아웃</button></a>
-						<a href="UpdateService.do"><button class="update_Btn">개인정보수정</button></a>
-						<a href="../main/ShowMember.jsp"><button class="update_Btn">회원정보보기</button></a>
+						<a href="LogoutService.do"><button class="logout_Btn">�α׾ƿ�</button></a>
+						<a href="UpdateService.do"><button class="update_Btn">������������</button></a>
+						<a href="../main/ShowMember.jsp"><button class="update_Btn">ȸ����������</button></a>
 					</div>
 				</div>
-		<!-- 메인 화면 -->
+		<!-- ���� ȭ�� -->
 		<div>
-			<h1 class="main_MainTitle">추천 운동은 oo</h1>
+			<h1 class="main_MainTitle">��õ ��� oo</h1>
 		</div>
 		<div style="height:600px">
 			<hr>
 
-			<h1>추천 운동 사진 및 설명</h1>
-		</div><!-- 메인화면 끝 -->
+			<h1>��õ � ���� �� ����</h1>
+		</div><!-- ����ȭ�� �� -->
 			
-			<!-- 하단메뉴바-->
+			<!-- �ϴܸ޴���-->
 			<footer class="ftco-footer ftco-bg-dark ftco-section">
 				<div class="container px-md-5">
 					<div class="row mb-5">
@@ -92,7 +94,7 @@
 								<div class="block-23 mb-3">
 									<ul>
 										<li><span class="icon icon-map-marker"></span><span
-											class="text">스마트인재개발원</span></li>
+											class="text">����Ʈ���簳�߿�</span></li>
 										<li><a href="#"><span class="icon icon-phone"></span><span
 												class="text">0507-1477-8852</span></a></li>
 										<li><a href="#"><span class="icon icon-envelope"></span><span

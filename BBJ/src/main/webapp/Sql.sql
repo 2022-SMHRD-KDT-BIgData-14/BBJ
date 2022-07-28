@@ -59,7 +59,7 @@ writer Varchar2(200)
 );
 
 
-select DISTINCT writer, VideoNm, URL from u_member u, YTvideo y where u.exercise=y.exercise and y.exercise='pilates' and y.lookup>100000 and rownum<=5
+select DISTINCT writer VideoNm, URL from u_member u, YTvideo y where u.exercise=y.exercise and y.exercise='home_training' and y.lookup>10000 and rownum<=5
 -- select id, exercise, name, url from 회원정보 u, 영상정보 y where u.exercise = y.exercise and u.id = 'shininho';
 
 

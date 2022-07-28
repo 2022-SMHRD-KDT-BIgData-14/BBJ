@@ -14,6 +14,7 @@ import com.smhrd.controller.DeleteMemberService;
 import com.smhrd.controller.JoinService;
 import com.smhrd.controller.LogoutService;
 import com.smhrd.controller.UpdateService;
+import com.smhrd.controller.YtService;
 import com.smhrd.controller.LoginService;
 
 
@@ -50,8 +51,11 @@ public class FrontController extends HttpServlet {
 
 		} else if (result.equals("leteMemberService.do")) {
 			service = new DeleteMemberService();
+			
+		} else if (result.equals("Service.do")) {
+			service = new YtService();
 
-		} 
+		}
 		
 		String path = request.getServletContext().getRealPath("");
 		System.out.println(path);

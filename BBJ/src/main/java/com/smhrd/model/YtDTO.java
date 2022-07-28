@@ -2,27 +2,41 @@ package com.smhrd.model;
 
 import java.math.BigDecimal;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public class YtDTO{
+	
+		private BigDecimal video;
+		private String videonm;
+		private String url;
+		private String collectiondate;
+		private String exercise;
+		private String lookup;
+		private String writer;
+		private String id;
 		
-		private BigDecimal VIDEONB;
-		private String VIDEONM;
-		private String URL;
-		private String COLLECTIONDATE;
-		private String EXERCISE;
-		private String LOOKUP;
-		private String WRITER;
 		
-		public YtDTO(BigDecimal vIDEONB, String vIDEONM, String uRL, String cOLLECTIONDATE, String eXERCISE,
-				String lOOKUP, String wRITER) {
+		
+		public YtDTO(String writer, String videonm, String url) {
 			super();
-			VIDEONB = vIDEONB;
-			VIDEONM = vIDEONM;
-			URL = uRL;
-			COLLECTIONDATE = cOLLECTIONDATE;
-			EXERCISE = eXERCISE;
-			LOOKUP = lOOKUP;
-			WRITER = wRITER;
+			this.writer = writer;
+			this.videonm = videonm;
+			this.url = url;
 		}
+
+
+
+		public YtDTO(String id, String exercise) {
+			super();
+			this.id = id;
+			this.exercise = exercise;
+		}
+		
+		
+		
 		
 		
 	}

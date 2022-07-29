@@ -1,3 +1,5 @@
+<%@page import="com.smhrd.model.MemberDTO"%>
+<%@page import="java.lang.reflect.Member"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%  %>
 
@@ -37,6 +39,10 @@
 </head>
 
 <body>
+
+<%MemberDTO info=(MemberDTO)session.getAttribute("info");%>
+<%String id =info.getId(); %>
+
 	<!-- 카테고리 화면 -->
 	<div id="colorlib-page">
 		<div>
@@ -52,7 +58,7 @@
 					<ul>
 						<li class="colorlib-active"><a href="../main/main_index.jsp">운동
 								추천</a></li>
-						<li><a href="../main/pt_academy.jsp">트레이너 / 체육관</a></li>
+						<li><a href="../main/pt_academy.jsp?id=<%=info.getId()%>">트레이너 / 체육관</a></li>
 						<li><a href="YtService.do">추천 영상</a></li>
 						<li><a href="../calendar/calendar_index.jsp">캘린더</a></li>
 						<li><a href="../main/survey.jsp">설문조사 다시하기</a></li>

@@ -4,7 +4,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.smhrd.mapper.PtMapper">
 	<select id="showPt" parameterType="String" resultType="PtDTO">
-		select p.* from pt p, u_member m where p.exercise = m.exercise and p.address1=m.address1 and m.id =#{id}
+		select p.exercise, p.ptname, p.address1, p.image, p.profile from pt p, u_member m where p.exercise = m.exercise and p.address1=m.address1 and m.id =#{id}
 	</select>
 	
 	

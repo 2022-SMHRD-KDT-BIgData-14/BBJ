@@ -1,13 +1,12 @@
 package com.smhrd.controller;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.smhrd.command.Command;
+import com.smhrd.model.MemberDTO;
+import com.smhrd.model.PtDTO;
 
 
 public class PtService implements Command{
@@ -21,7 +20,14 @@ public class PtService implements Command{
 		String image = request.getParameter("image");
 		String profile = request.getParameter("profile");
 		
-		return "./pt_academy.jsp";
+		System.out.println("exercise"+exercise);
+		System.out.println("ptname"+ptname);
+		System.out.println("address1"+address1);
+		System.out.println("image"+image);
+		System.out.println("profile"+profile);
+		
+		
+		return "../main/pt_academy.jsp";
 	}
 
 }

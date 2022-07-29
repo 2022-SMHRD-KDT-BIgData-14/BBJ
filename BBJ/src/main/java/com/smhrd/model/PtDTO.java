@@ -13,10 +13,10 @@ import lombok.RequiredArgsConstructor;
 public class PtDTO {
 
 	private BigDecimal ptnb;
-	@NonNull private String exercise;
-	@NonNull private String ptname;
-	@NonNull private String address1;
+	private String exercise;
+	private String ptname;
+	private String address1;
 	private String address2;
-	@NonNull private String image;
-	@NonNull private String profile;
+	private String image;
+	private String profile;
 }

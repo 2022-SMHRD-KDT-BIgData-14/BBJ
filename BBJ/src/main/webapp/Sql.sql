@@ -11,7 +11,9 @@ select * from u_member
 <<<<<<< HEAD
 
 <<<<<<< HEAD
-select p.* from pt p, u_member m where p.exercise = m.exercise and p.address1=m.address1 and m.id ='as2'
+select p.exercise, p.ptname, p.address1, p.image, p.profile 
+from pt p, u_member m 
+where p.exercise = m.exercise and p.address1=m.address1 and m.id ='as'
 
 create table Calender
   (id number(20),

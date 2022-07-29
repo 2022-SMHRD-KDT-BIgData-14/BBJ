@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@page import="com.smhrd.model.PtDTO"%>
 <%@page import="com.smhrd.model.PtDAO"%>
 <%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
@@ -7,6 +8,14 @@
 <%@page import="com.smhrd.model.AcademyDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+=======
+<%@page import="com.smhrd.model.PtDAO"%>
+<%@page import="com.smhrd.model.PtDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.smhrd.model.MemberDTO"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,13 +66,12 @@
 			</h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li><a href="../main/main_index.jsp">øÓµø √ﬂ√µ</a></li>
-					<li class="colorlib-active"><a href="../main/pt_academy.jsp">∆Æ∑π¿Ã≥ 
-							/ √º¿∞∞¸</a></li>
-					<li><a href="../main/youtube.jsp">√ﬂ√µ øµªÛ</a></li>
-					<li><a href="../calendar/calendar_index.jsp">ƒ∂∏∞¥ı</a></li>
-					<li><a href="../main/survey.jsp">º≥πÆ¡∂ªÁ ¥ŸΩ√«œ±‚</a></li>
-					<li><a href="../main/update_member.jsp">∞≥¿Œ¡§∫∏ºˆ¡§</a></li>
+					<li><a href="../main/main_index.jsp">Ïö¥Îèô Ï∂îÏ≤ú</a></li>
+					<li class="colorlib-active"><a href="../main/pt_academy.jsp">Ìä∏Î†àÏù¥ÎÑà / Ï≤¥Ïú°Í¥Ä</a></li>
+					<li><a href="../main/youtube.jsp">Ï∂îÏ≤ú ÏòÅÏÉÅ</a></li>
+					<li><a href="../main/calendar.jsp">Ï∫òÎ¶∞Îçî</a></li>
+					<li><a href="../main/survey.jsp">ÏÑ§Î¨∏Ï°∞ÏÇ¨ Îã§ÏãúÌïòÍ∏∞</a></li>
+					<li><a href="../main/update_member.jsp">Í∞úÏù∏Ï†ïÎ≥¥ÏàòÏ†ï</a></li>
 				</ul>
 			</nav>
 
@@ -87,132 +95,145 @@
 		</aside>
 		<!-- END COLORLIB-ASIDE -->
 
-		<!-- ªÛ¥‹∏ﬁ¥∫πŸ -->
+		<!-- ÏÉÅÎã®Î©îÎâ¥Î∞î -->
 		<div class="overlay">
-			<!-- ∑Œ±◊æ∆øÙ/»∏ø¯¡§∫∏ºˆ¡§ πˆ∆∞ ª˝º∫ -->
+			<!-- Î°úÍ∑∏ÏïÑÏõÉ/ÌöåÏõêÏ†ïÎ≥¥ÏàòÏ†ï Î≤ÑÌäº ÏÉùÏÑ± -->
 			<div class="logout_update_btn" style="float: right;">
-				<a href="LogoutService.do"><button class="logout_Btn">∑Œ±◊æ∆øÙ</button></a>
-				<a href="UpdateService.do"><button class="update_Btn">∞≥¿Œ¡§∫∏ºˆ¡§</button></a>
+				<a href="LogoutService.do"><button class="logout_Btn">Î°úÍ∑∏ÏïÑÏõÉ</button></a>
+				<a href="UpdateService.do"><button class="update_Btn">Í∞úÏù∏Ï†ïÎ≥¥ÏàòÏ†ï</button></a>
 			</div>
 		</div>
 
-		<!-- ∏ﬁ¿Œ»≠∏È -->
+		<!-- Î©îÏù∏ÌôîÎ©¥ -->
 		<div id="colorlib-main">
-			<!-- ∏ﬁ¿Œ ≈∏¿Ã∆≤(∆Æ∑π¿Ã≥ √ﬂ√µ) -->
+			<!-- Î©îÏù∏ ÌÉÄÏù¥ÌãÄ(Ìä∏Î†àÏù¥ÎÑàÏ∂îÏ≤ú) -->
 			<div id="main_MainTitle">
-				<h1 class="main_MainTitle">√ﬂ√µ ∆Æ∑π¿Ã≥ </h1>
+				<h1 class="main_MainTitle">Ï∂îÏ≤ú Ìä∏Î†àÏù¥ÎÑà</h1>
 			</div>
 
-			<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ (ªÁ¡¯)  -->
+			<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú (ÏÇ¨ÏßÑ)  -->
 			<section class="ftco-section">
 				<div class="container">
 					<div class="row">
+<<<<<<< HEAD
 					
 						
 						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 1 -->
+=======
+					<%
+						MemberDTO info = (MemberDTO)session.getAttribute("info");
+						ArrayList <PtDTO> pt_list = new PtDAO().showPt(info.getId());
+						String id = request.getParameter("id");
+						int ptnb = Integer.parseInt(request.getParameter("ptnb"));
+						System.out.println("id:"+id); %>
+						<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú 1 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2"
 									style="background-image: url(../main/images/image_1.jpg);"></a>
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">1st</a></span>
-									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
-									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
-									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥ÎØ∏ÏßÄ -->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥Î¶Ñ -->
 
-									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
-									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
 
-									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									
+									<h3 class="mb-4"><%=pt_list.get(0).getPtname()%></h3>
+									
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4"><%=pt_list.get(0).getAddress1()%></p>
+
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏ ÎßÅÌÅ¨-->
 									<a href="#"
-										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
-										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+										style="color: lightslategray; text-decoration: underline;">Ìä∏Î†àÏù¥ÎÑà
+										Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏Î°ú Ïù¥ÎèôÌïòÍ∏∞</a>
 								</div>
 							</div>
 						</div>
-
-						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 2 -->
+						
+						<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú 2 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2"
 									style="background-image: url(../main/images/image_1.jpg);"></a>
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">2nd</a></span>
-									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
-									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
-									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥ÎØ∏ÏßÄ -->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥Î¶Ñ -->
+									<h3 class="mb-4"><%=pt_list.get(1).getPtname()%></h3>
 
-									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
-									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4"><%=pt_list.get(1).getAddress1()%></p>
 
-									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏ ÎßÅÌÅ¨-->
 									<a href="#"
-										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
-										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+										style="color: lightslategray; text-decoration: underline;">Ìä∏Î†àÏù¥ÎÑà
+										Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏Î°ú Ïù¥ÎèôÌïòÍ∏∞</a>
 								</div>
 							</div>
 						</div>
-						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 3 -->
+						<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú 3 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2"
 									style="background-image: url(../main/images/image_1.jpg);"></a>
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">3rd</a></span>
-									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
-									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
-									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥ÎØ∏ÏßÄ -->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥Î¶Ñ -->
+									<h3 class="mb-4"><%=pt_list.get(2).getPtname()%></h3>
 
-									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
-									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4"><%=pt_list.get(2).getAddress1()%></p>
 
-									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏ ÎßÅÌÅ¨-->
 									<a href="#"
-										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
-										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+										style="color: lightslategray; text-decoration: underline;">Ìä∏Î†àÏù¥ÎÑà
+										Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏Î°ú Ïù¥ÎèôÌïòÍ∏∞</a>
 								</div>
 							</div>
 						</div>
-						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 4 -->
+						<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú 4 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2"
 									style="background-image: url(../main/images/image_1.jpg);"></a>
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">4th</a></span>
-									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
-									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
-									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥ÎØ∏ÏßÄ -->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥Î¶Ñ -->
+									<h3 class="mb-4"><%=pt_list.get(3).getPtname()%></h3>
 
-									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
-									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4"><%=pt_list.get(3).getAddress1()%></p>
 
-									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏ ÎßÅÌÅ¨-->
 									<a href="#"
-										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
-										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+										style="color: lightslategray; text-decoration: underline;">Ìä∏Î†àÏù¥ÎÑà
+										Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏Î°ú Ïù¥ÎèôÌïòÍ∏∞</a>
 								</div>
 							</div>
 						</div>
 
-						<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ 5 -->
+						<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú 5 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								<a href="#" class="img img-2"
 									style="background-image: url(../main/images/image_1.jpg);"></a>
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">5th</a></span>
-									<!-- ∆Æ∑π¿Ã≥  ¿ÃπÃ¡ˆ -->
-									<!-- ∆Æ∑π¿Ã≥  ¿Ã∏ß -->
-									<h3 class="mb-4">∆Æ∑π¿Ã≥  ¿Ã∏ß</h3>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥ÎØ∏ÏßÄ -->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïù¥Î¶Ñ -->
+									<h3 class="mb-4"><%=pt_list.get(4).getPtname()%></h3>
 
-									<!-- ∆Æ∑π¿Ã≥  ¡÷º“(±∏) -->
-									<p class="mb-4">∆Æ∑π¿Ã≥  ¡÷º“(±∏)</p>
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4"><%=pt_list.get(4).getAddress1()%></p>
 
-									<!-- ∆Æ∑π¿Ã≥  º˚∞Ì ªÁ¿Ã∆Æ ∏µ≈©-->
+									<!-- Ìä∏Î†àÏù¥ÎÑà Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏ ÎßÅÌÅ¨-->
 									<a href="#"
-										style="color: lightslategray; text-decoration: underline;">∆Æ∑π¿Ã≥ 
-										º˚∞Ì ªÁ¿Ã∆Æ∑Œ ¿Ãµø«œ±‚</a>
+										style="color: lightslategray; text-decoration: underline;">Ìä∏Î†àÏù¥ÎÑà
+										Ïà®Í≥† ÏÇ¨Ïù¥Ìä∏Î°ú Ïù¥ÎèôÌïòÍ∏∞</a>
 								</div>
 							</div>
 						</div>
@@ -220,16 +241,16 @@
 					</div>
 				</div>
 			</section>
-			<!-- ∆Æ∑π¿Ã≥  √ﬂ√µ «¡∑π¿” ≥° -->
+			<!-- Ìä∏Î†àÏù¥ÎÑà Ï∂îÏ≤ú ÌîÑÎ†àÏûÑ ÎÅù -->
 
 			<hr>
 
-			<!-- ∏ﬁ¿Œ ≈∏¿Ã∆≤ (√º¿∞∞¸ √ﬂ√µ) -->
+			<!-- Î©îÏù∏ ÌÉÄÏù¥ÌãÄ (Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú) -->
 			<div id="main_MainTitle">
-				<h1 class="main_MainTitle">√ﬂ√µ √º¿∞∞¸</h1>
+				<h1 class="main_MainTitle">Ï∂îÏ≤ú Ï≤¥Ïú°Í¥Ä</h1>
 			</div>
 
-			<!-- √º¿∞∞¸ √ﬂ√µ «¡∑π¿” Ω√¿€ -->
+			<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú ÌîÑÎ†àÏûÑ ÏãúÏûë -->
 			<section class="ftco-section">
 				<div class="container">
 					<div class="row">
@@ -241,70 +262,126 @@
 						int num = request.getParameter("AcademyNB");
 						System.out.println("id:"+id); %> 
 
+<<<<<<< HEAD
 					<!-- 	<!-- √º¿∞∞¸ √ﬂ√µ 1 -->
+=======
+						<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú 1 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">1st</a></span>
+<<<<<<< HEAD
 									√º¿∞∞¸ ¿Ã∏ß
 									<h3 class="mb-4"><%= Academy_list.get(0).getAcademy() %></h3>
 									√º¿∞∞¸ ¡÷º“(±∏)
 									<p class="mb-4"><%= Academy_list.get(0).getAddress1() %></p>
+=======
+									<!-- Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ -->
+									<h3 class="mb-4">Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ</h3>
+									<!-- Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4">Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨)</p>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 								</div>
 							</div>
+<<<<<<< HEAD
 						</div> -->
 
 						
 						<!-- <!-- √º¿∞∞¸ √ﬂ√µ 2 -->
+=======
+						</div>
+						<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú 2 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">2nd</a></span>
+<<<<<<< HEAD
 									√º¿∞∞¸ ¿Ã∏ß
 									<h3 class="mb-4"><%= Academy_list.get(1).getAcademy() %></h3>
 									√º¿∞∞¸ ¡÷º“(±∏)
 									<p class="mb-4"><%= Academy_list.get(1).getAddress1() %></p>
+=======
+									<!-- Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ -->
+									<h3 class="mb-4">Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ</h3>
+									<!-- Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4">Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨)</p>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 								</div>
 							</div>
 						</div>
+<<<<<<< HEAD
 						√º¿∞∞¸ √ﬂ√µ 3
+=======
+						<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú 3 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">3rd</a></span>
+<<<<<<< HEAD
 									√º¿∞∞¸ ¿Ã∏ß
 									<h3 class="mb-4"><%= Academy_list.get(2).getAcademy() %></h3>
 									√º¿∞∞¸ ¡÷º“(±∏)
 									<p class="mb-4"><%= Academy_list.get(2).getAddress1() %></p>
+=======
+									<!-- Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ -->
+									<h3 class="mb-4">Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ</h3>
+									<!-- Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4">Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨)</p>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 								</div>
 							</div>
 						</div>
+<<<<<<< HEAD
 						√º¿∞∞¸ √ﬂ√µ 4
+=======
+						<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú 4 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">4th</a></span>
+<<<<<<< HEAD
 									√º¿∞∞¸ ¿Ã∏ß
 									<h3 class="mb-4"><%= Academy_list.get(3).getAcademy() %></h3>
 									√º¿∞∞¸ ¡÷º“(±∏)
 									<p class="mb-4"><%= Academy_list.get(3).getAddress1() %></p>
+=======
+									<!-- Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ -->
+									<h3 class="mb-4">Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ</h3>
+									<!-- Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4">Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨)</p>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 								</div>
 							</div>
 						</div>
+<<<<<<< HEAD
 						√º¿∞∞¸ √ﬂ√µ 5
+=======
+						<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú 5 -->
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">5th</a></span>
+<<<<<<< HEAD
 									√º¿∞∞¸ ¿Ã∏ß
 									<h3 class="mb-4"><%= Academy_list.get(4).getAcademy() %></h3>
 									√º¿∞∞¸ ¡÷º“(±∏)
 									<p class="mb-4"><%= Academy_list.get(4).getAddress1() %></p>
+=======
+									<!-- Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ -->
+									<h3 class="mb-4">Ï≤¥Ïú°Í¥Ä Ïù¥Î¶Ñ</h3>
+									<!-- Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨) -->
+									<p class="mb-4">Ï≤¥Ïú°Í¥Ä Ï£ºÏÜå(Íµ¨)</p>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 								</div>
 							</div>
 						</div> -->
@@ -314,8 +391,7 @@
 					</div>
 				</div>
 			</section>
-			<!-- √º¿∞∞¸ √ﬂ√µ «¡∑π¿” ≥° -->
-
+			<!-- Ï≤¥Ïú°Í¥Ä Ï∂îÏ≤ú ÌîÑÎ†àÏûÑ ÎÅù -->
 
 
 			<footer class="ftco-footer ftco-bg-dark ftco-section">

@@ -57,7 +57,11 @@
 				<nav id="colorlib-main-menu" role="navigation">
 					<ul>
 						<li class="colorlib-active"><a href="../main/main_index.jsp">운동
+<<<<<<< HEAD
 								추천</a></li>      <!-- num도 받아야함 -->
+=======
+								추천</a></li>
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 						<li><a href="../main/pt_academy.jsp?id=<%=info.getId()%>">트레이너 / 체육관</a></li>
 						<li><a href="YtService.do">추천 영상</a></li>
 						<li><a href="../calendar/calendar_index.jsp">캘린더</a></li>

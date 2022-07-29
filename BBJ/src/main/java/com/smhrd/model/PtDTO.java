@@ -8,6 +8,10 @@ import lombok.RequiredArgsConstructor;
 @AllArgsConstructor
 @RequiredArgsConstructor
 public class PtDTO {
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BIgData-14/BBJ.git
 	private BigDecimal ptnb;
 	private String exercise;
 	private String ptname;

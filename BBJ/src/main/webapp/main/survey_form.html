@@ -85,8 +85,9 @@
 					<li><a href="../main/main_index.html">운동 추천</a></li>
 					<li><a href="../main/pt_academy.html">트레이너 / 체육관</a></li>
 					<li><a href="../main/youtube.html">추천 영상</a></li>
-					<li><a href="../main/calendar.html">캘린더</a></li>
+					<li><a href="../calendar/calendar_index.html">캘린더</a></li>
 					<li class="colorlib-active"><a href="../main/survey.html">설문조사 다시하기</a></li>
+					<li><a href="../main/update_jsp">개인정보수정</a></li>
 
 				</ul>
 			</nav>
@@ -106,49 +107,219 @@
 		<!-- 설문조사 form 공간 -->
 		<div id="colorlib-main" style="text-align:center;">
 		<div>
-			<!-- <section id="survey"> -->
+			<section id="survey" style="text-align:center;">
 				<div class="wrapper">
 				
 					<!-- 설문조사 form 시작 -->
 					<form id="form" action="./survey_result.html">
+					
+						<!-- 설문결과는 문항1-3만 알고리즘 구현해서 도출할 것 -->
 						<!-- 문항1 -->
-						<div style="height: 100vh;">
+						<div class="test" style="height: 100vh;">
 							<div class="question_container">
 								<h3 class="number">1/10</h3>
-								<h3 class="question">설문 문항1</h3>
+								<h3 class="question">다이어트 목적으로 운동을 시작하시나요?</h3>
 							</div>
-							<div>
-								<div class="btn_wrap" style="height:60px">
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
 									<!-- Q1-A1 -->
-									<input class="next_btn" type="button" name="Q1_answer_1" value="집에서 하는 운동을 선호합니다."/>
+									<button class="next_btn">네, 다이어트 목적입니다.</button>
 								</div>
-								<div>
+								<div class="btn_wrap" style="padding-top:10px;">
 									<!-- Q1-A2 -->
-									<input class="next_btn" type="button" name="Q1_answer_2" value="밖에서 하는 운동을 선호합니다."/>
+									<button class="next_btn">아니오, 다이어트 목적은 아닙니다.</button>
 								</div>
 							</div>
-						</div>
-						
-						
-						<div class="btn_wrap">
-							<button class="next_btn">다 음</button>
 						</div>
 									
-						
 						<!-- 문항2 -->
-						<div class="test">
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">2/10</h3>
+								<h3 class="question">운동을 여러 사람과 같이 하고 싶으신가요?</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q2-A1 -->
+									<button class="next_btn">네, 다같이 하고 싶습니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q2-A2 -->
+									<button class="next_btn">아니오, 혼자서 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항3 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">3/10</h3>
+								<h3 class="question">집에서 하는 운동을 선호하시나요?</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q3-A1 -->
+									<button class="next_btn">네, 집에서 하고 싶습니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q3-A2 -->
+									<button class="next_btn">아니오, 밖에서 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항4 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">4/10</h3>
+								<h3 class="question">체형교정과 근력강화 중 어떤 것을 원하시나요?</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q4-A1 -->
+									<button class="next_btn">체형교정을 원합니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q4-A2 -->
+									<button class="next_btn">근력강화를 원합니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항5 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">5/10</h3>
+								<h3 class="question">운동은,</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q5-A1 -->
+									<button class="next_btn">정적이고 조용한 운동이 좋다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q5-A2 -->
+									<button class="next_btn">적극적이고 활동적인 운동이 좋다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항6 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">6/10</h3>
+								<h3 class="question">운동은 계획적으로 하고 싶으신가요?</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q6-A1 -->
+									<button class="next_btn">네, 계획적으로 하고 싶습니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q6-A2 -->
+									<button class="next_btn">아니오, 계획없이 내가 하고 싶을 때 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항7 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">7/10</h3>
+								<h3 class="question">운동을 한다면,</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q7-A1 -->
+									<button class="next_btn">부위별로 운동을 하고 싶습니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q7-A2 -->
+									<button class="next_btn">전신 운동을 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항8 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">8/10</h3>
+								<h3 class="question">나는 운동을 하고 싶지만,</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q8-A1 -->
+									<button class="next_btn">경제적 부담이 느껴집니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q8-A2 -->
+									<button class="next_btn">상관없이 그냥 운동을 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항9 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">9/10</h3>
+								<h3 class="question">운동을 할 때,</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q9-A1 -->
+									<button class="next_btn">기구를 사용해서 하고 싶습니다.</button>
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q9-A2 -->
+									<button class="next_btn">맨몸으로 하고 싶습니다.</button>
+								</div>
+							</div>
+						</div>
+						
+						<!-- 문항10 -->
+						<div class="test" style="height: 100vh;">
+							<div class="question_container">
+								<h3 class="number">10/10</h3>
+								<h3 class="question">운동 대회가 있다면,</h3>
+							</div>
+							<!-- input태그 button태그로 변경 -->	
+							<div style="height:100px">
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q10-A1 -->
+									<input type="submit" value="관심있고 해보고 싶습니다." class="submit_btn" />
+								</div>
+								<div class="btn_wrap" style="padding-top:10px;">
+									<!-- Q10-A2 -->
+									<input type="submit" value="운동 대회는 관심없습니다." class="submit_btn" />
+								</div>
+							</div>
+						</div>
+						<!-- 설문 문항 끝 -->
+						
+						
+						
+						<!-- <div class="test">
 							<div class="question_container">
 								<h3 class="number">2/10</h3>
 								<h3 class="question">당신이 가장 재밌었던 수업은?</h3>
 							</div>
 							<div class="answer">
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
@@ -159,6 +330,7 @@
 								<button class="next_btn">다 음</button>
 							</div>
 						</div>
+						
 						<div class="test">
 							<div class="question_container">
 								<h3 class="number">3/3</h3>
@@ -166,41 +338,41 @@
 							</div>
 							<div class="answer">
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 								<div>
-									<!-- input, label의 id, for 맞춰주기 -->
+									input, label의 id, for 맞춰주기
 									<input id="one" type="radio" name="answer_1" /> <label
 										for="one"> 게임 개발(유니티, 언리얼, Pygame) </label>
 								</div>
 							</div>
 							<div class="btn_wrap btn_sort">
-								<button class="submit_btn">제 출</button>
+								<button class="prev_btn">이 전</button>
 								<input type="submit" value="제 출" class="submit_btn" />
 							</div>
-						</div>
+						</div> -->
 					</form>
 				</div>
 				</div>
-			<!-- </section> -->
-			<script type="text/javascript" src="js/form.js"></script>
+			</section>
+			<script type="text/javascript" src="../survey/js/form.js"></script>
 
 			<!-- 아래 상단바? -->
 			<footer class="ftco-footer ftco-bg-dark ftco-section">

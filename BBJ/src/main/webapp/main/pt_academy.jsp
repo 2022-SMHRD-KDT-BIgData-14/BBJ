@@ -1,3 +1,10 @@
+<%@page import="com.smhrd.model.PtDTO"%>
+<%@page import="com.smhrd.model.PtDAO"%>
+<%@page import="org.apache.ibatis.reflection.SystemMetaObject"%>
+<%@page import="com.smhrd.model.MemberDTO"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="com.smhrd.model.AcademyDAO"%>
+<%@page import="com.smhrd.model.AcademyDTO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -100,7 +107,8 @@
 			<section class="ftco-section">
 				<div class="container">
 					<div class="row">
-
+					
+						
 						<!-- 트레이너 추천 1 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
@@ -225,72 +233,81 @@
 			<section class="ftco-section">
 				<div class="container">
 					<div class="row">
+					
+					<%
+						MemberDTO info = (MemberDTO)session.getAttribute("info");
+						AcademyDTO dto = new AcademyDAO().ptacademy(dto);
+						String id = request.getParameter("id");
+						int num = request.getParameter("AcademyNB");
+						System.out.println("id:"+id); %> 
 
-						<!-- 체육관 추천 1 -->
+					<!-- 	<!-- 체육관 추천 1 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">1st</a></span>
-									<!-- 체육관 이름 -->
-									<h3 class="mb-4">체육관 이름</h3>
-									<!-- 체육관 주소(구) -->
-									<p class="mb-4">체육관 주소(구)</p>
+									체육관 이름
+									<h3 class="mb-4"><%= Academy_list.get(0).getAcademy() %></h3>
+									체육관 주소(구)
+									<p class="mb-4"><%= Academy_list.get(0).getAddress1() %></p>
 								</div>
 							</div>
-						</div>
-						<!-- 체육관 추천 2 -->
+						</div> -->
+
+						
+						<!-- <!-- 체육관 추천 2 -->
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">2nd</a></span>
-									<!-- 체육관 이름 -->
-									<h3 class="mb-4">체육관 이름</h3>
-									<!-- 체육관 주소(구) -->
-									<p class="mb-4">체육관 주소(구)</p>
+									체육관 이름
+									<h3 class="mb-4"><%= Academy_list.get(1).getAcademy() %></h3>
+									체육관 주소(구)
+									<p class="mb-4"><%= Academy_list.get(1).getAddress1() %></p>
 								</div>
 							</div>
 						</div>
-						<!-- 체육관 추천 3 -->
+						체육관 추천 3
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">3rd</a></span>
-									<!-- 체육관 이름 -->
-									<h3 class="mb-4">체육관 이름</h3>
-									<!-- 체육관 주소(구) -->
-									<p class="mb-4">체육관 주소(구)</p>
+									체육관 이름
+									<h3 class="mb-4"><%= Academy_list.get(2).getAcademy() %></h3>
+									체육관 주소(구)
+									<p class="mb-4"><%= Academy_list.get(2).getAddress1() %></p>
 								</div>
 							</div>
 						</div>
-						<!-- 체육관 추천 4 -->
+						체육관 추천 4
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">4th</a></span>
-									<!-- 체육관 이름 -->
-									<h3 class="mb-4">체육관 이름</h3>
-									<!-- 체육관 주소(구) -->
-									<p class="mb-4">체육관 주소(구)</p>
+									체육관 이름
+									<h3 class="mb-4"><%= Academy_list.get(3).getAcademy() %></h3>
+									체육관 주소(구)
+									<p class="mb-4"><%= Academy_list.get(3).getAddress1() %></p>
 								</div>
 							</div>
 						</div>
-						<!-- 체육관 추천 5 -->
+						체육관 추천 5
 						<div class="col-md-4">
 							<div class="blog-entry ftco-animate">
 								
 								<div class="text text-2 pt-2 mt-3">
 									<span class="category mb-3 d-block"><a href="#">5th</a></span>
-									<!-- 체육관 이름 -->
-									<h3 class="mb-4">체육관 이름</h3>
-									<!-- 체육관 주소(구) -->
-									<p class="mb-4">체육관 주소(구)</p>
+									체육관 이름
+									<h3 class="mb-4"><%= Academy_list.get(4).getAcademy() %></h3>
+									체육관 주소(구)
+									<p class="mb-4"><%= Academy_list.get(4).getAddress1() %></p>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 
 

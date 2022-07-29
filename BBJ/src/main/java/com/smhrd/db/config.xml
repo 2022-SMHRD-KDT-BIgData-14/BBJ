@@ -8,6 +8,8 @@
 	
 	<typeAliases>
 		<typeAlias type="com.smhrd.model.MemberDTO" alias="MemberDTO"/>
+		<typeAlias type="com.smhrd.model.AcademyDTO" alias="AcademyDTO"/>
+	
 		
 		
 	</typeAliases>
@@ -24,6 +26,7 @@
 	</environments>
 	<mappers>
 		<mapper resource="com/smhrd/mapper/MemberMapper.xml"/>
+		<mapper resource="com/smhrd/mapper/AcademyMapper.xml"/>
 
 		
 	</mappers>

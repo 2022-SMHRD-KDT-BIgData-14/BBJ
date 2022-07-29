@@ -15,6 +15,10 @@ insert into u_member values('as5','asd','test','pilates','광산구','쌍촌동'
 delete from u_member where id= 'as'
 
 
+select a.* 
+from academy a, u_member m 
+where a.exercise = m.exercise and a.address1=m.address1 and m.id = 'as2'
+
 
 --drop table u_member;
 =======
@@ -81,13 +85,14 @@ CREATE SEQUENCE num_YTvideo
   NOCYCLE;
   
   
-  
+drop  table Academy;
 create table Academy(
-AcademyNB Varchar2(100) primary key,
+AcademyNB number(20) primary key,
 Academy Varchar2(100),
 Address1 Varchar2(100),
 Address2 Varchar2(100),
-Exercise Varchar2(100));
+Exercise Varchar2(100)
+)
 
 
 

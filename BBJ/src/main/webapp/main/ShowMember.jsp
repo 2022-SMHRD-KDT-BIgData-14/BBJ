@@ -45,7 +45,7 @@
 								<%} %>
 						</table>
 					</nav>		
-					<a href="../main/main_index.html" class="button next scrolly">되돌아가기</a>	
+					<a href="../main/main_index.jsp" class="button next scrolly">되돌아가기</a>	
 			</div>
 		<!-- Scripts -->
 			<script src="../main/js/jquery.min.js"></script>

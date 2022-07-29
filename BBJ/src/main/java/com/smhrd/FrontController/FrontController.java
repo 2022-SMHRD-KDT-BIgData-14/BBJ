@@ -14,6 +14,7 @@ import com.smhrd.controller.DeleteMemberService;
 import com.smhrd.controller.JoinService;
 import com.smhrd.controller.LogoutService;
 import com.smhrd.controller.UpdateService;
+import com.smhrd.controller.YtService;
 import com.smhrd.controller.LoginService;
 
 
@@ -42,7 +43,7 @@ public class FrontController extends HttpServlet {
 		} else if (result.equals("JoinService.do")) {
 			service = new JoinService();
 
-		} else if (result.equals("LogoutService.do")) {
+		} else if (result.equals("goutService.do")) {
 			service = new LogoutService();
 
 		} else if (result.equals("dateService.do")) {
@@ -50,8 +51,11 @@ public class FrontController extends HttpServlet {
 
 		} else if (result.equals("leteMemberService.do")) {
 			service = new DeleteMemberService();
+			
+		} else if (result.equals("YtService.do")) {
+			service = new YtService();
 
-		} 
+		}
 		
 		String path = request.getServletContext().getRealPath("");
 		System.out.println(path);

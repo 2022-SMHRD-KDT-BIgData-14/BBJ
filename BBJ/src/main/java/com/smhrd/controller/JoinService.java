@@ -52,7 +52,7 @@ public class JoinService implements Command {
 			// JoinSuccess.jsp
 			// 회원가입한 이메일 전송
 			request.setAttribute("id", id);// 담아주기 email을 담아줘야 한당~!~!~!~!~!~~
-			moveURL = "/survey/form.html";
+			moveURL = "../survey/survey_index.html";
 		} else {
 			System.out.println("회원가입 실패");
 			// Main.jsp

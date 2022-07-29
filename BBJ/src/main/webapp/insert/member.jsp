@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	<form action="LoginService.do">
+	<form action="LoginService.do" method="post">
 		<div>
 		<a href="./main_index.html" class="logo" target="_blank"> <img
 			src="./img/logo.png" alt="">

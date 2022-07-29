@@ -191,9 +191,11 @@ body {
 	color:black;
 }
 
+
 .next_btn {
 	width:400px;
 	height:40px;
+	font-size:15px;
 	padding-top:10px;
 	padding-bottom:10px;
 	text-align:center;
@@ -202,6 +204,7 @@ body {
 	border:none;
 	cursor: pointer;
 	border-radius:1vw;
+	
 	/* opacity: 0.7;
   button opacity time animation
   	transition: all 1s; */
@@ -209,6 +212,11 @@ body {
 .next_btn:hover{
 	background-color:gold;
 }
-
+.logout_Btn:hover{
+	text-decoration: underline;
+}
+.update_Btn:hover{
+	text-decoration: underline;
+}
 
 

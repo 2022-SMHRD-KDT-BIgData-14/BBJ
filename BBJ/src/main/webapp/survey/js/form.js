@@ -13,13 +13,20 @@ function scrollDown(){
 }
 
 $(function(){
+	$(".next_btn").click(function(e){
+		e.preventDefault();
+		scrollDown();
+	})
+})
+
+$(function(){
     $(".next_btn").click(function(e){
-        let divs = $(this).parent().prev().children();
+       /* let divs = $(this).parent().prev().children();
         let inputs = divs.find("input:checked");
         if(inputs.length < 1){
             alert("문항을 선택해주세요");
             return false;
-        }
+        }*/
         e.preventDefault();
         scrollDown();
     });

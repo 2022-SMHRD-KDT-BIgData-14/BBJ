@@ -261,7 +261,12 @@
   	border-color:black;
   	font-family: "NEXON Lv1 Gothic OTF";
 }
-
+.logout_Btn:hover{
+	text-decoration: underline;
+}
+.update_Btn:hover{
+	text-decoration: underline;
+}
 .restart{
 	width:400px;
 	height:40px;

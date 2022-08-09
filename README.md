@@ -27,3 +27,7 @@
 ![image](https://user-images.githubusercontent.com/106124656/183577664-234ffdb2-7042-4312-aaae-f76dcc57f63c.png)
 ### 체육관 추천
 ![image](https://user-images.githubusercontent.com/106124656/183577707-7c2cd981-bb1d-42c6-8023-6717d38d6b46.png)
+### 영상추천
+![영상추천](https://user-images.githubusercontent.com/106124656/183578292-8ce4f1c0-baed-4b57-b402-e81f59c21bee.png)
+### 캘린더
+![image](https://user-images.githubusercontent.com/106124656/183578337-ab71a0ca-c16a-41f1-95de-11504f2aa2d6.png)

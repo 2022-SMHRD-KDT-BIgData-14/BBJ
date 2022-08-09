@@ -10,7 +10,7 @@
 + 영상 추천 기능
 + 캘린더 기능
 ## 2.개발과정
-![image](https://user-images.githubusercontent.com/106124656/183576284-a9f720ef-a65d-4786-b542-972de9ba7d4d.png)
+![개발과정](https://user-images.githubusercontent.com/106124656/183577985-caab1506-4ea6-4f8a-b393-ad793638c85e.png)
 ## 3.기능 흐름도
 ### 유스케이스
 ![image](https://user-images.githubusercontent.com/106124656/183576560-53774987-2503-451a-b24f-3f8505c4534b.png)
@@ -20,8 +20,7 @@
 ![image](https://user-images.githubusercontent.com/106124656/183577026-1d3a8326-e21c-4a7a-b26c-7c76a6cd85c1.png)
 ## 4.SW 동작 화면
 ### 로그인/회원가입
-![image](https://user-images.githubusercontent.com/106124656/183577262-4ac1e041-7ea0-4739-90b5-d17aeaee230d.png)
-![image](https://user-images.githubusercontent.com/106124656/183577272-f433bc76-a63a-427c-99a6-ea5fc59a1968.png)
+![로그인 회원가입](https://user-images.githubusercontent.com/106124656/183578065-eda6ce92-d648-4079-bdd9-765e7ce22791.png)
 ### 설문조사
 ![설문조사](https://user-images.githubusercontent.com/106124656/183577600-f4bc37f6-1148-404e-9396-aad4d979cc78.png)
 ### 트레이너추천
